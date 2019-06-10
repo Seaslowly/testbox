@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.qmuiteam.qmui.widget.QMUIWindowInsetLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <com.qmuiteam.qmui.widget.QMUITabSegment
+        android:id="@+id/tabs"
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:layout_gravity="top"
+        android:background="?attr/qmui_list_item_bg_with_border_top"
+        android:textSize="12sp"
+        app:qmui_tab_has_indicator="true"
+        app:qmui_tab_icon_position="top"
+        app:qmui_tab_indicator_height="2dp"
+        app:qmui_tab_indicator_top="true"></com.qmuiteam.qmui.widget.QMUITabSegment>
+
+
+</com.qmuiteam.qmui.widget.QMUIWindowInsetLayout>

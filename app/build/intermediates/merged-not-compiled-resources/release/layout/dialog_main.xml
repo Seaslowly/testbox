@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <LinearLayout
+        android:background="@color/colorPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="40sp">
+        <TextView
+            android:id="@+id/t_title"
+            android:layout_marginLeft="10dp"
+            android:gravity="left|center"
+            android:textSize="18sp"
+            android:textColor="@color/white"
+            android:text="测试传感器参数"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center_horizontal"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/t_voltage"
+        style="@style/dialog_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="电压:3.5v" />
+
+    <TextView
+        android:id="@+id/t_tiltSensor"
+        style="@style/dialog_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="倾斜传感器:00" />
+
+    <TextView
+        android:id="@+id/t_temper"
+        style="@style/dialog_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="温度:20℃" />
+
+    <TextView
+        android:id="@+id/t_humidity"
+        style="@style/dialog_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="湿度:50%" />
+
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/t_waterban"
+            style="@style/dialog_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="" />
+    </LinearLayout>
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/l_choose"
+        android:orientation="horizontal"
+        android:gravity="bottom"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:visibility="invisible"
+            android:gravity="center"
+            android:id="@+id/button_cancel"
+            android:text="取消"
+            android:layout_weight="1"
+            android:textSize="20sp"
+            android:textColor="@color/colorPrimary"
+            android:layout_marginBottom="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:gravity="center"
+            android:layout_marginRight="10dp"
+            android:id="@+id/button_next"
+            android:layout_weight="1"
+            android:text="我已把开关拨到1"
+            android:textColor="@color/colorPrimary"
+            android:textSize="20sp"
+            android:layout_marginBottom="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</LinearLayout>

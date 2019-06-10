@@ -1,0 +1,2079 @@
+android.arch.core.R
+android.arch.core.executor.ArchTaskExecutor:
+    91:92:public void setDelegate(android.arch.core.executor.TaskExecutor)
+    106:106:public static java.util.concurrent.Executor getMainThreadExecutor()
+    111:111:public static java.util.concurrent.Executor getIOThreadExecutor()
+android.arch.core.executor.TaskExecutor:
+    54:59:public void executeOnMainThread(java.lang.Runnable)
+android.arch.core.util.Function
+android.arch.lifecycle.AndroidViewModel:
+    private android.app.Application mApplication
+    33:35:public AndroidViewModel(android.app.Application)
+    44:44:public android.app.Application getApplication()
+android.arch.lifecycle.ClassesInfoCache:
+    private static final int CALL_TYPE_NO_ARG
+    private static final int CALL_TYPE_PROVIDER
+    private static final int CALL_TYPE_PROVIDER_WITH_EVENT
+android.arch.lifecycle.ComputableLiveData
+android.arch.lifecycle.ComputableLiveData$1
+android.arch.lifecycle.ComputableLiveData$2
+android.arch.lifecycle.ComputableLiveData$3
+android.arch.lifecycle.LifecycleRegistry:
+    private static final java.lang.String LOG_TAG
+    225:225:public int getObserverCount()
+android.arch.lifecycle.Lifecycling:
+    private static final int REFLECTIVE_CALLBACK
+    private static final int GENERATED_CALLBACK
+    37:37:public Lifecycling()
+android.arch.lifecycle.MediatorLiveData
+android.arch.lifecycle.MediatorLiveData$Source
+android.arch.lifecycle.MethodCallsLogger:
+    36:40:public boolean approveCall(java.lang.String,int)
+android.arch.lifecycle.R
+android.arch.lifecycle.ReportFragment:
+    private static final java.lang.String REPORT_FRAGMENT_TAG
+    46:46:static android.arch.lifecycle.ReportFragment get(android.app.Activity)
+    127:128:void setProcessListener(android.arch.lifecycle.ReportFragment$ActivityInitializationListener)
+android.arch.lifecycle.Transformations
+android.arch.lifecycle.Transformations$1
+android.arch.lifecycle.Transformations$2
+android.arch.lifecycle.Transformations$2$1
+android.arch.lifecycle.ViewModelProvider:
+    private static final java.lang.String DEFAULT_KEY
+    66:67:public ViewModelProvider(android.arch.lifecycle.ViewModelStoreOwner,android.arch.lifecycle.ViewModelProvider$Factory)
+android.arch.lifecycle.ViewModelProvider$AndroidViewModelFactory
+android.arch.lifecycle.ViewModelProvider$NewInstanceFactory
+android.arch.lifecycle.livedata.R
+android.arch.lifecycle.livedata.core.R
+android.arch.lifecycle.viewmodel.R
+androidx.annotation.AnimRes
+androidx.annotation.AnimatorRes
+androidx.annotation.AnyRes
+androidx.annotation.AnyThread
+androidx.annotation.ArrayRes
+androidx.annotation.AttrRes
+androidx.annotation.BinderThread
+androidx.annotation.BoolRes
+androidx.annotation.CallSuper
+androidx.annotation.CheckResult
+androidx.annotation.ColorInt
+androidx.annotation.ColorLong
+androidx.annotation.ColorRes
+androidx.annotation.DimenRes
+androidx.annotation.Dimension
+androidx.annotation.DrawableRes
+androidx.annotation.FloatRange
+androidx.annotation.FontRes
+androidx.annotation.FractionRes
+androidx.annotation.GuardedBy
+androidx.annotation.HalfFloat
+androidx.annotation.IdRes
+androidx.annotation.IntDef
+androidx.annotation.IntRange
+androidx.annotation.IntegerRes
+androidx.annotation.InterpolatorRes
+androidx.annotation.LayoutRes
+androidx.annotation.LongDef
+androidx.annotation.MainThread
+androidx.annotation.MenuRes
+androidx.annotation.NavigationRes
+androidx.annotation.NonNull
+androidx.annotation.Nullable
+androidx.annotation.PluralsRes
+androidx.annotation.Px
+androidx.annotation.RawRes
+androidx.annotation.RequiresApi
+androidx.annotation.RequiresFeature
+androidx.annotation.RequiresPermission
+androidx.annotation.RequiresPermission$Read
+androidx.annotation.RequiresPermission$Write
+androidx.annotation.RestrictTo
+androidx.annotation.RestrictTo$Scope
+androidx.annotation.Size
+androidx.annotation.StringDef
+androidx.annotation.StringRes
+androidx.annotation.StyleRes
+androidx.annotation.StyleableRes
+androidx.annotation.TransitionRes
+androidx.annotation.UiThread
+androidx.annotation.VisibleForTesting
+androidx.annotation.WorkerThread
+androidx.annotation.XmlRes
+androidx.core.internal.package-info
+androidx.versionedparcelable.NonParcelField
+androidx.versionedparcelable.ParcelField
+androidx.versionedparcelable.ParcelImpl:
+    32:34:public ParcelImpl(androidx.versionedparcelable.VersionedParcelable)
+    44:44:public androidx.versionedparcelable.VersionedParcelable getVersionedParcel()
+androidx.versionedparcelable.ParcelUtils
+androidx.versionedparcelable.R
+androidx.versionedparcelable.VersionedParcel:
+    private static final java.lang.String TAG
+    private static final int EX_SECURITY
+    private static final int EX_BAD_PARCELABLE
+    private static final int EX_ILLEGAL_ARGUMENT
+    private static final int EX_NULL_POINTER
+    private static final int EX_ILLEGAL_STATE
+    private static final int EX_NETWORK_MAIN_THREAD
+    private static final int EX_UNSUPPORTED_OPERATION
+    private static final int EX_PARCELABLE
+    private static final int TYPE_VERSIONED_PARCELABLE
+    private static final int TYPE_PARCELABLE
+    private static final int TYPE_SERIALIZABLE
+    private static final int TYPE_STRING
+    private static final int TYPE_BINDER
+    protected abstract void writeByteArray(byte[],int,int)
+    protected abstract void writeLong(long)
+    protected abstract void writeFloat(float)
+    protected abstract void writeDouble(double)
+    protected abstract void writeStrongBinder(android.os.IBinder)
+    protected abstract void writeBoolean(boolean)
+    protected abstract void writeStrongInterface(android.os.IInterface)
+    protected abstract void writeBundle(android.os.Bundle)
+    protected abstract long readLong()
+    protected abstract float readFloat()
+    protected abstract double readDouble()
+    protected abstract android.os.IBinder readStrongBinder()
+    protected abstract android.os.Bundle readBundle()
+    protected abstract boolean readBoolean()
+    249:251:public void writeStrongInterface(android.os.IInterface,int)
+    258:260:public void writeBundle(android.os.Bundle,int)
+    267:269:public void writeBoolean(boolean,int)
+    289:291:public void writeByteArray(byte[],int,int,int)
+    307:309:public void writeLong(long,int)
+    316:318:public void writeFloat(float,int)
+    325:327:public void writeDouble(double,int)
+    343:345:public void writeStrongBinder(android.os.IBinder,int)
+    363:366:public boolean readBoolean(boolean,int)
+    383:386:public long readLong(long,int)
+    394:397:public float readFloat(float,int)
+    405:408:public double readDouble(double,int)
+    425:428:public android.os.IBinder readStrongBinder(android.os.IBinder,int)
+    457:460:public android.os.Bundle readBundle(android.os.Bundle,int)
+    468:470:public void writeByte(byte,int)
+    478:484:public void writeSize(android.util.Size,int)
+    492:498:public void writeSizeF(android.util.SizeF,int)
+    503:516:public void writeSparseBooleanArray(android.util.SparseBooleanArray,int)
+    521:523:public void writeBooleanArray(boolean[],int)
+    528:537:protected void writeBooleanArray(boolean[])
+    542:545:public boolean[] readBooleanArray(boolean[],int)
+    551:559:protected boolean[] readBooleanArray()
+    565:575:public void writeCharArray(char[],int)
+    580:591:public char[] readCharArray(char[],int)
+    597:599:public void writeIntArray(int[],int)
+    604:613:protected void writeIntArray(int[])
+    618:621:public int[] readIntArray(int[],int)
+    627:635:protected int[] readIntArray()
+    641:643:public void writeLongArray(long[],int)
+    648:657:protected void writeLongArray(long[])
+    662:665:public long[] readLongArray(long[],int)
+    671:679:protected long[] readLongArray()
+    685:687:public void writeFloatArray(float[],int)
+    692:701:protected void writeFloatArray(float[])
+    706:709:public float[] readFloatArray(float[],int)
+    715:723:protected float[] readFloatArray()
+    729:731:public void writeDoubleArray(double[],int)
+    736:745:protected void writeDoubleArray(double[])
+    750:753:public double[] readDoubleArray(double[],int)
+    759:767:protected double[] readDoubleArray()
+    781:782:public void writeSet(java.util.Set,int)
+    795:796:public void writeList(java.util.List,int)
+    799:838:private void writeCollection(java.util.Collection,int)
+    851:853:public void writeArray(java.lang.Object[],int)
+    858:902:protected void writeArray(java.lang.Object[])
+    905:916:private int getType(java.lang.Object)
+    927:929:public void writeVersionedParcelable(androidx.versionedparcelable.VersionedParcelable,int)
+    963:965:public void writeSerializable(java.io.Serializable,int)
+    968:987:private void writeSerializable(java.io.Serializable)
+    1013:1053:public void writeException(java.lang.Exception,int)
+    1063:1064:protected void writeNoException()
+    1076:1084:public java.lang.Exception readException(java.lang.Exception,int)
+    1099:1100:private int readExceptionCode()
+    1104:1105:private java.lang.Exception readException(int,java.lang.String)
+    1114:1115:protected static java.lang.Throwable getRootCause(java.lang.Throwable)
+    1125:1143:private java.lang.Exception createException(int,java.lang.String)
+    1151:1154:public byte readByte(byte,int)
+    1162:1170:public android.util.Size readSize(android.util.Size,int)
+    1178:1186:public android.util.SizeF readSizeF(android.util.SizeF,int)
+    1195:1208:public android.util.SparseBooleanArray readSparseBooleanArray(android.util.SparseBooleanArray,int)
+    1224:1227:public java.util.Set readSet(java.util.Set,int)
+    1243:1246:public java.util.List readList(java.util.List,int)
+    1250:1292:private java.util.Collection readCollection(int,java.util.Collection)
+    1308:1311:public java.lang.Object[] readArray(java.lang.Object[],int)
+    1317:1360:protected java.lang.Object[] readArray(java.lang.Object[])
+    1366:1369:public androidx.versionedparcelable.VersionedParcelable readVersionedParcelable(androidx.versionedparcelable.VersionedParcelable,int)
+    1396:1426:protected java.io.Serializable readSerializable()
+androidx.versionedparcelable.VersionedParcel$1
+androidx.versionedparcelable.VersionedParcel$ParcelException
+androidx.versionedparcelable.VersionedParcelParcel:
+    private static final boolean DEBUG
+    private static final java.lang.String TAG
+    129:135:public void writeByteArray(byte[],int,int)
+    144:145:public void writeLong(long)
+    149:150:public void writeFloat(float)
+    154:155:public void writeDouble(double)
+    164:165:public void writeStrongBinder(android.os.IBinder)
+    174:175:public void writeBoolean(boolean)
+    179:180:public void writeStrongInterface(android.os.IInterface)
+    184:185:public void writeBundle(android.os.Bundle)
+    194:194:public long readLong()
+    199:199:public float readFloat()
+    204:204:public double readDouble()
+    214:214:public android.os.IBinder readStrongBinder()
+    236:236:public android.os.Bundle readBundle()
+    241:241:public boolean readBoolean()
+androidx.versionedparcelable.VersionedParcelStream
+androidx.versionedparcelable.VersionedParcelStream$FieldBuffer
+androidx.versionedparcelable.VersionedParcelStream$InputBuffer
+androidx.versionedparcelable.VersionedParcelize
+butterknife.BindAnim:
+    public abstract int value()
+butterknife.BindArray:
+    public abstract int value()
+butterknife.BindBitmap:
+    public abstract int value()
+butterknife.BindBool:
+    public abstract int value()
+butterknife.BindColor:
+    public abstract int value()
+butterknife.BindDimen:
+    public abstract int value()
+butterknife.BindDrawable:
+    public abstract int value()
+    public abstract int tint()
+butterknife.BindFloat:
+    public abstract int value()
+butterknife.BindFont:
+    public abstract int value()
+    public abstract int style()
+butterknife.BindInt:
+    public abstract int value()
+butterknife.BindString:
+    public abstract int value()
+butterknife.BindView:
+    public abstract int value()
+butterknife.BindViews:
+    public abstract int[] value()
+butterknife.BuildConfig:
+    public static final boolean DEBUG
+    public static final java.lang.String APPLICATION_ID
+    public static final java.lang.String BUILD_TYPE
+    public static final java.lang.String FLAVOR
+    public static final int VERSION_CODE
+    public static final java.lang.String VERSION_NAME
+butterknife.ButterKnife:
+    private static final java.lang.String TAG
+    112:113:public static void setDebug(boolean)
+    123:124:public static butterknife.Unbinder bind(android.app.Activity)
+    135:135:public static butterknife.Unbinder bind(android.view.View)
+    146:147:public static butterknife.Unbinder bind(android.app.Dialog)
+    159:160:public static butterknife.Unbinder bind(java.lang.Object,android.app.Activity)
+    172:172:public static butterknife.Unbinder bind(java.lang.Object,android.view.View)
+    184:185:public static butterknife.Unbinder bind(java.lang.Object,android.app.Dialog)
+    189:212:private static butterknife.Unbinder createBinding(java.lang.Object,android.view.View)
+    218:240:private static java.lang.reflect.Constructor findBindingConstructorForClass(java.lang.Class)
+    247:252:public static varargs void apply(java.util.List,butterknife.ButterKnife$Action[])
+    258:263:public static varargs void apply(android.view.View[],butterknife.ButterKnife$Action[])
+    269:272:public static void apply(java.util.List,butterknife.ButterKnife$Action)
+    277:280:public static void apply(android.view.View[],butterknife.ButterKnife$Action)
+    286:289:public static varargs void apply(android.view.View,butterknife.ButterKnife$Action[])
+    294:295:public static void apply(android.view.View,butterknife.ButterKnife$Action)
+    301:304:public static void apply(java.util.List,butterknife.ButterKnife$Setter,java.lang.Object)
+    310:313:public static void apply(android.view.View[],butterknife.ButterKnife$Setter,java.lang.Object)
+    319:320:public static void apply(android.view.View,butterknife.ButterKnife$Setter,java.lang.Object)
+    331:334:public static void apply(java.util.List,android.util.Property,java.lang.Object)
+    345:348:public static void apply(android.view.View[],android.util.Property,java.lang.Object)
+    356:357:public static void apply(android.view.View,android.util.Property,java.lang.Object)
+    363:363:public static android.view.View findById(android.view.View,int)
+    370:370:public static android.view.View findById(android.app.Activity,int)
+    377:377:public static android.view.View findById(android.app.Dialog,int)
+butterknife.ButterKnife$Action:
+    public abstract void apply(android.view.View,int)
+butterknife.ButterKnife$Setter:
+    public abstract void set(android.view.View,java.lang.Object,int)
+butterknife.OnCheckedChanged:
+    public abstract int[] value()
+butterknife.OnClick:
+    public abstract int[] value()
+butterknife.OnEditorAction:
+    public abstract int[] value()
+butterknife.OnFocusChange:
+    public abstract int[] value()
+butterknife.OnItemClick:
+    public abstract int[] value()
+butterknife.OnItemLongClick:
+    public abstract int[] value()
+butterknife.OnItemSelected:
+    public abstract int[] value()
+    public abstract butterknife.OnItemSelected$Callback callback()
+butterknife.OnLongClick:
+    public abstract int[] value()
+butterknife.OnPageChange:
+    public abstract int[] value()
+    public abstract butterknife.OnPageChange$Callback callback()
+butterknife.OnTextChanged:
+    public abstract int[] value()
+    public abstract butterknife.OnTextChanged$Callback callback()
+butterknife.OnTouch:
+    public abstract int[] value()
+butterknife.Unbinder:
+    public abstract void unbind()
+butterknife.Unbinder$1:
+    10:10:public void unbind()
+butterknife.internal.DebouncingOnClickListener
+butterknife.internal.DebouncingOnClickListener$1
+butterknife.internal.ImmutableList
+butterknife.internal.ListenerClass
+butterknife.internal.ListenerClass$NONE
+butterknife.internal.ListenerMethod
+butterknife.internal.Utils
+com.example.tscdll.TSCActivity
+com.example.tscdll.TSCActivity$1
+com.example.tscdll.TSCActivity$2
+com.example.tscdll.TSCActivity$3
+com.example.tscdll.TSCUSBActivity:
+    private android.widget.TextView QQ
+    private static final java.lang.String TAG
+    private boolean mPermissionRequestPending
+    private static android.hardware.usb.UsbAccessory mAccessory
+    private static android.os.ParcelFileDescriptor mFileDescriptor
+    private static java.io.FileInputStream mInputStream
+    private static java.io.FileOutputStream mOutputStream
+    private static final int MESSAGE_SWITCH
+    private static final int MESSAGE_TEMPERATURE
+    private static final int MESSAGE_LIGHT
+    private static final int MESSAGE_JOY
+    public static final byte LED_SERVO_COMMAND
+    public static final byte RELAY_COMMAND
+    private static final java.lang.String ACTION_USB_PERMISSION
+    private android.widget.Button msendbtn
+    private android.widget.Button comopenbtn
+    private android.hardware.usb.UsbConstants test
+    private java.lang.Thread readThread
+    private android.hardware.usb.UsbManager manager
+    private android.hardware.usb.UsbDevice device2
+    348:385:public void threadopen()
+    391:416:public void open()
+    547:613:public void msendbythread()
+    618:660:public void checkInfo()
+    891:1000:private void returndata_test()
+    1046:1073:public java.lang.String openport(android.hardware.usb.UsbManager,android.hardware.usb.UsbDevice,int)
+    1141:1191:public java.lang.String sendcommandUTF8(java.lang.String)
+    1200:1250:public java.lang.String sendcommandBig5(java.lang.String)
+    1261:1311:public java.lang.String sendcommandGB2312(java.lang.String)
+    1372:1452:public java.lang.String sendcommand_largebyte(byte[])
+    1497:1508:public java.lang.String clearbuffer()
+    1515:1536:public java.lang.String barcode(int,int,java.lang.String,int,int,int,int,int,java.lang.String)
+    1542:1552:public java.lang.String qrcode(int,int,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+    1559:1569:public java.lang.String bar(java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+    1575:1595:public java.lang.String printerfont(int,int,java.lang.String,int,int,int,java.lang.String)
+    1600:1610:public java.lang.String printlabel(int,int)
+    1616:1625:public java.lang.String formfeed()
+    1630:1640:public java.lang.String nobackfeed()
+    1646:1662:public java.lang.String sendfile(java.lang.String)
+    1669:1685:public java.lang.String sendfile(java.lang.String,java.lang.String)
+    1693:1706:public byte[] return_file_byte(java.lang.String,java.lang.String)
+    1713:1743:public java.lang.String downloadfile(java.lang.String,java.lang.String)
+    1750:1780:public java.lang.String downloadfile(java.io.File,java.lang.String)
+    1789:1819:public java.lang.String downloadfile(java.lang.String,java.lang.String,java.lang.String)
+    1825:1855:public java.lang.String downloadpcx(java.lang.String)
+    1861:1892:public java.lang.String downloadbmp(java.lang.String)
+    1897:1927:public java.lang.String downloadttf(java.lang.String)
+    2005:2024:public java.lang.String printername()
+    2032:2051:public java.lang.String printername(int)
+    2060:2079:public java.lang.String printermemory()
+    2087:2106:public java.lang.String printermemory(int)
+    2114:2135:public java.lang.String printermileage()
+    2143:2164:public java.lang.String printermileage(int)
+    2223:2244:public java.lang.String printercodepage()
+    2251:2272:public java.lang.String printercodepage(int)
+    2279:2299:public java.lang.String printerfile()
+    2307:2327:public java.lang.String printerfile(int)
+    2336:2343:public java.lang.String restart()
+    2357:2386:public java.lang.String send_file_data(java.lang.String,byte[])
+    2398:2442:public java.lang.String sendcommand_without_delay(byte[])
+    2451:2549:public java.lang.String send_file_data_without_delay(java.lang.String,byte[])
+    2558:2587:public java.lang.String downloadfile_absolutePath(java.lang.String,java.lang.String)
+    2594:2624:public java.lang.String downloadfile_absolutePath(java.io.File,java.lang.String)
+    2636:2721:public byte printerstatus_byte()
+    2732:2797:public byte printerstatus_byte(int)
+    2814:2951:public java.lang.String printerstatus()
+    2960:3087:public java.lang.String printerstatus(int)
+    3097:3225:public java.lang.String queryprinter()
+    3233:3361:public java.lang.String queryprinter(int)
+    3371:3566:public java.lang.String status()
+    3576:3771:public java.lang.String status(int)
+    3780:3987:public java.lang.String status(int,int)
+    3997:4088:public java.lang.String printer_completestatus()
+    4100:4191:public java.lang.String printer_completestatus(int,int)
+    4209:4294:public java.lang.String windowsfont(int,int,int,java.lang.String,java.lang.String)
+    4301:4356:public java.lang.String windowsfont(int,int,android.graphics.Bitmap)
+    4372:4455:public void sendpicture(int,int,java.lang.String)
+    4462:4541:public void sendpicture(int,int,android.graphics.Bitmap)
+    4549:4632:public void sendpicture_halftone(int,int,java.lang.String)
+    4645:4732:public void sendpicture_CPCL(int,int,java.lang.String)
+    4739:4825:private void sendpicture_resize(int,int,java.lang.String,int,int)
+    4831:4917:private void sendpicture_resize_halftone(int,int,java.lang.String,int,int)
+    4926:4939:public android.graphics.Bitmap bitmap2Gray(android.graphics.Bitmap)
+    4948:4985:public android.graphics.Bitmap lineGrey(android.graphics.Bitmap)
+    4993:5024:public android.graphics.Bitmap gray2Binary(android.graphics.Bitmap)
+    5032:5120:public android.graphics.Bitmap gray2halftone(android.graphics.Bitmap)
+    5130:5133:public static java.lang.String byteArrayToHex(byte[])
+    5149:5157:public java.lang.String WiFi_Default()
+    5162:5168:public java.lang.String WiFi_SSID(java.lang.String)
+    5173:5179:public java.lang.String WiFi_WPA(java.lang.String)
+    5184:5190:public java.lang.String WiFi_WEP(int,java.lang.String)
+    5195:5201:public java.lang.String WiFi_DHCP()
+    5206:5212:public java.lang.String WiFi_Port(int)
+    5217:5223:public java.lang.String WiFi_StaticIP(java.lang.String,java.lang.String,java.lang.String)
+    5231:5248:public java.lang.String NFC_Read_data(int)
+    5255:5258:public int NFC_Write_data(java.lang.String)
+    5264:5265:public int NFC_Timeout(int)
+    5273:5370:public java.util.ArrayList pdf_color(int,int,java.io.File)
+    5379:5477:public java.util.ArrayList pdf_color_resize(int,int,java.io.File,int,int)
+    5485:5587:public java.util.ArrayList pdf_color_save(int,int,java.io.File)
+    5596:5694:public java.util.ArrayList pdf_gray(int,int,java.io.File)
+    5704:5801:public java.util.ArrayList pdf_gray_resize(int,int,java.io.File,int,int)
+    5810:5913:public java.util.ArrayList pdf_gray_save(int,int,java.io.File)
+    78:78:static synthetic void access$4(com.example.tscdll.TSCUSBActivity,android.hardware.usb.UsbInterface)
+    78:78:static synthetic android.hardware.usb.UsbInterface access$5(com.example.tscdll.TSCUSBActivity)
+    84:84:static synthetic void access$6(android.hardware.usb.UsbEndpoint)
+    82:82:static synthetic void access$7(android.hardware.usb.UsbDeviceConnection)
+    86:86:static synthetic void access$9(android.hardware.usb.UsbEndpoint)
+    87:87:static synthetic void access$10(android.hardware.usb.UsbEndpoint)
+    133:133:static synthetic int access$18(com.example.tscdll.TSCUSBActivity)
+    131:131:static synthetic byte[] access$19(com.example.tscdll.TSCUSBActivity)
+com.example.tscdll.TSCUSBActivity$11
+com.example.tscdll.TSCUSBActivity$12
+com.example.tscdll.TSCUSBActivity$14
+com.example.tscdll.TSCUSBActivity$15
+com.example.tscdll.TSCUSBActivity$16
+com.example.tscdll.TSCUSBActivity$18
+com.example.tscdll.TSCUSBActivity$19
+com.example.tscdll.TSCUSBActivity$20
+com.example.tscdll.TSCUSBActivity$21
+com.example.tscdll.TSCUSBActivity$22
+com.example.tscdll.TSCUSBActivity$23
+com.example.tscdll.TSCUSBActivity$24
+com.example.tscdll.TSCUSBActivity$25
+com.example.tscdll.TSCUSBActivity$26
+com.example.tscdll.TSCUSBActivity$27
+com.example.tscdll.TSCUSBActivity$28
+com.example.tscdll.TSCUSBActivity$29
+com.example.tscdll.TSCUSBActivity$30
+com.example.tscdll.TSCUSBActivity$6
+com.example.tscdll.TSCUSBActivity$8
+com.example.tscdll.TscWifiActivity
+com.example.tscdll.TscWifiActivity$1
+com.example.tscdll.TscWifiActivity$2
+com.example.tscdll.TscWifiActivity$3
+com.example.tscdll.TscWifiActivity$4
+com.example.tscdll.TscWifiActivity$5
+com.example.tscdll.TscWifiActivity$6
+com.example.tscdll.TscWifiActivity$7
+com.felhr.deviceids.CH34xIds:
+    6:8:private CH34xIds()
+com.felhr.deviceids.CP210xIds:
+    3:156:public CP210xIds()
+com.felhr.deviceids.CP2130Ids
+com.felhr.deviceids.CP2130Ids$ConcreteDevice
+com.felhr.deviceids.FTDISioIds:
+    6:8:private FTDISioIds()
+com.felhr.deviceids.PL2303Ids:
+    6:8:private PL2303Ids()
+com.felhr.deviceids.XdcVcpIds
+com.felhr.deviceids.XdcVcpIds$ConcreteDevice
+com.felhr.usbserial.BLED112SerialDevice
+com.felhr.usbserial.BuildConfig
+com.felhr.usbserial.CDCSerialDevice:
+    private static final int CDC_REQTYPE_HOST2DEVICE
+    private static final int CDC_REQTYPE_DEVICE2HOST
+    private static final int CDC_SET_LINE_CODING
+    private static final int CDC_GET_LINE_CODING
+    private static final int CDC_SET_CONTROL_LINE_STATE
+    private static final int CDC_CONTROL_LINE_ON
+    private static final int CDC_CONTROL_LINE_OFF
+    50:51:public CDCSerialDevice(android.hardware.usb.UsbDevice,android.hardware.usb.UsbDeviceConnection)
+    99:107:public boolean syncOpen()
+    114:117:public void syncClose()
+    222:222:public void setRTS(boolean)
+    228:228:public void setDTR(boolean)
+    246:246:public void getBreak(com.felhr.usbserial.UsbSerialInterface$UsbBreakCallback)
+    252:252:public void getFrame(com.felhr.usbserial.UsbSerialInterface$UsbFrameCallback)
+    258:258:public void getOverrun(com.felhr.usbserial.UsbSerialInterface$UsbOverrunCallback)
+    264:264:public void getParity(com.felhr.usbserial.UsbSerialInterface$UsbParityCallback)
+com.felhr.usbserial.CH34xSerialDevice:
+    private static final int DEFAULT_BAUDRATE
+    private static final int REQTYPE_HOST_FROM_DEVICE
+    private static final int REQTYPE_HOST_TO_DEVICE
+    private static final int CH341_REQ_WRITE_REG
+    private static final int CH341_REQ_READ_REG
+    private static final int CH341_REG_BREAK1
+    private static final int CH341_REG_BREAK2
+    private static final int CH341_NBREAK_BITS_REG1
+    private static final int CH341_NBREAK_BITS_REG2
+    private static final int CH34X_300_1312
+    private static final int CH34X_300_0f2c
+    private static final int CH34X_600_1312
+    private static final int CH34X_600_0f2c
+    private static final int CH34X_1200_1312
+    private static final int CH34X_1200_0f2c
+    private static final int CH34X_2400_1312
+    private static final int CH34X_2400_0f2c
+    private static final int CH34X_4800_1312
+    private static final int CH34X_4800_0f2c
+    private static final int CH34X_9600_1312
+    private static final int CH34X_9600_0f2c
+    private static final int CH34X_19200_1312
+    private static final int CH34X_19200_0f2c_rest
+    private static final int CH34X_38400_1312
+    private static final int CH34X_57600_1312
+    private static final int CH34X_115200_1312
+    private static final int CH34X_230400_1312
+    private static final int CH34X_460800_1312
+    private static final int CH34X_921600_1312
+    private static final int CH34X_PARITY_NONE
+    private static final int CH34X_PARITY_ODD
+    private static final int CH34X_PARITY_EVEN
+    private static final int CH34X_PARITY_MARK
+    private static final int CH34X_PARITY_SPACE
+    private static final int CH34X_FLOW_CONTROL_NONE
+    private static final int CH34X_FLOW_CONTROL_RTS_CTS
+    private static final int CH34X_FLOW_CONTROL_DSR_DTR
+    93:102:public CH34xSerialDevice(android.hardware.usb.UsbDevice,android.hardware.usb.UsbDeviceConnection)
+    153:163:public boolean syncOpen()
+    170:172:public void syncClose()
+    317:319:public void setRTS(boolean)
+    324:326:public void setDTR(boolean)
+    344:344:public void getBreak(com.felhr.usbserial.UsbSerialInterface$UsbBreakCallback)
+    350:350:public void getFrame(com.felhr.usbserial.UsbSerialInterface$UsbFrameCallback)
+    356:356:public void getOverrun(com.felhr.usbserial.UsbSerialInterface$UsbOverrunCallback)
+    362:362:public void getParity(com.felhr.usbserial.UsbSerialInterface$UsbParityCallback)
+    547:552:private int writeHandshakeByte()
+com.felhr.usbserial.CP2102SerialDevice:
+    private static final int CP210x_IFC_ENABLE
+    private static final int CP210x_SET_BAUDDIV
+    private static final int CP210x_SET_LINE_CTL
+    private static final int CP210x_GET_LINE_CTL
+    private static final int CP210x_SET_MHS
+    private static final int CP210x_SET_BAUDRATE
+    private static final int CP210x_SET_FLOW
+    private static final int CP210x_SET_XON
+    private static final int CP210x_SET_XOFF
+    private static final int CP210x_SET_CHARS
+    private static final int CP210x_GET_MDMSTS
+    private static final int CP210x_GET_COMM_STATUS
+    private static final int CP210x_REQTYPE_HOST2DEVICE
+    private static final int CP210x_REQTYPE_DEVICE2HOST
+    private static final int CP210x_MHS_RTS_ON
+    private static final int CP210x_MHS_RTS_OFF
+    private static final int CP210x_MHS_DTR_ON
+    private static final int CP210x_MHS_DTR_OFF
+    private static final int CP210x_UART_ENABLE
+    private static final int CP210x_UART_DISABLE
+    private static final int CP210x_LINE_CTL_DEFAULT
+    private static final int CP210x_MHS_DEFAULT
+    private static final int CP210x_MHS_DTR
+    private static final int CP210x_MHS_RTS
+    private static final int CP210x_MHS_ALL
+    private static final int CP210x_XON
+    private static final int CP210x_XOFF
+    private static final int DEFAULT_BAUDRATE
+    83:84:public CP2102SerialDevice(android.hardware.usb.UsbDevice,android.hardware.usb.UsbDeviceConnection)
+    139:149:public boolean syncOpen()
+    156:159:public void syncClose()
+    336:343:public void setRTS(boolean)
+    348:355:public void setDTR(boolean)
+    372:373:public void getBreak(com.felhr.usbserial.UsbSerialInterface$UsbBreakCallback)
+    378:379:public void getFrame(com.felhr.usbserial.UsbSerialInterface$UsbFrameCallback)
+    384:385:public void getOverrun(com.felhr.usbserial.UsbSerialInterface$UsbOverrunCallback)
+    390:392:public void getParity(com.felhr.usbserial.UsbSerialInterface$UsbParityCallback)
+com.felhr.usbserial.CP2130SpiDevice
+com.felhr.usbserial.FTDISerialDevice:
+    private static final int FTDI_SIO_RESET
+    private static final int FTDI_SIO_MODEM_CTRL
+    private static final int FTDI_SIO_SET_FLOW_CTRL
+    private static final int FTDI_SIO_SET_BAUD_RATE
+    private static final int FTDI_SIO_SET_DATA
+    private static final int FTDI_REQTYPE_HOST2DEVICE
+    private static final int FTDI_SIO_SET_DTR_MASK
+    private static final int FTDI_SIO_SET_DTR_HIGH
+    private static final int FTDI_SIO_SET_DTR_LOW
+    private static final int FTDI_SIO_SET_RTS_MASK
+    private static final int FTDI_SIO_SET_RTS_HIGH
+    private static final int FTDI_SIO_SET_RTS_LOW
+    public static final int FTDI_BAUDRATE_300
+    public static final int FTDI_BAUDRATE_600
+    public static final int FTDI_BAUDRATE_1200
+    public static final int FTDI_BAUDRATE_2400
+    public static final int FTDI_BAUDRATE_4800
+    public static final int FTDI_BAUDRATE_9600
+    public static final int FTDI_BAUDRATE_19200
+    public static final int FTDI_BAUDRATE_38400
+    public static final int FTDI_BAUDRATE_57600
+    public static final int FTDI_BAUDRATE_115200
+    public static final int FTDI_BAUDRATE_230400
+    public static final int FTDI_BAUDRATE_460800
+    public static final int FTDI_BAUDRATE_921600
+    private static final int FTDI_SET_DATA_DEFAULT
+    private static final int FTDI_SET_MODEM_CTRL_DEFAULT1
+    private static final int FTDI_SET_MODEM_CTRL_DEFAULT2
+    private static final int FTDI_SET_MODEM_CTRL_DEFAULT3
+    private static final int FTDI_SET_MODEM_CTRL_DEFAULT4
+    private static final int FTDI_SET_FLOW_CTRL_DEFAULT
+    95:96:public FTDISerialDevice(android.hardware.usb.UsbDevice,android.hardware.usb.UsbDeviceConnection)
+    151:159:public boolean syncOpen()
+    166:170:public void syncClose()
+    366:373:public void setRTS(boolean)
+    378:385:public void setDTR(boolean)
+    402:403:public void getBreak(com.felhr.usbserial.UsbSerialInterface$UsbBreakCallback)
+    408:409:public void getFrame(com.felhr.usbserial.UsbSerialInterface$UsbFrameCallback)
+    414:415:public void getOverrun(com.felhr.usbserial.UsbSerialInterface$UsbOverrunCallback)
+    420:421:public void getParity(com.felhr.usbserial.UsbSerialInterface$UsbParityCallback)
+    609:660:public int syncRead(byte[],int)
+com.felhr.usbserial.PL2303SerialDevice:
+    private static final int PL2303_REQTYPE_HOST2DEVICE_VENDOR
+    private static final int PL2303_REQTYPE_DEVICE2HOST_VENDOR
+    private static final int PL2303_REQTYPE_HOST2DEVICE
+    private static final int PL2303_VENDOR_WRITE_REQUEST
+    private static final int PL2303_SET_LINE_CODING
+    private static final int PL2303_SET_CONTROL_REQUEST
+    42:43:public PL2303SerialDevice(android.hardware.usb.UsbDevice,android.hardware.usb.UsbDeviceConnection)
+    95:103:public boolean syncOpen()
+    110:111:public void syncClose()
+    259:259:public void setRTS(boolean)
+    265:265:public void setDTR(boolean)
+    283:283:public void getBreak(com.felhr.usbserial.UsbSerialInterface$UsbBreakCallback)
+    289:289:public void getFrame(com.felhr.usbserial.UsbSerialInterface$UsbFrameCallback)
+    295:295:public void getOverrun(com.felhr.usbserial.UsbSerialInterface$UsbOverrunCallback)
+    301:301:public void getParity(com.felhr.usbserial.UsbSerialInterface$UsbParityCallback)
+com.felhr.usbserial.SerialBuffer:
+    public static final int DEFAULT_READ_BUFFER_SIZE
+    public static final int DEFAULT_WRITE_BUFFER_SIZE
+    34:35:public void debug(boolean)
+    39:49:public void putReadBuffer(java.nio.ByteBuffer)
+com.felhr.usbserial.SerialInputStream
+com.felhr.usbserial.SerialOutputStream
+com.felhr.usbserial.UsbSerialDebugger:
+    public static final java.lang.String ENCODING
+    58:67:public static void printReadLogPut(byte[],boolean)
+com.felhr.usbserial.UsbSerialDevice:
+    protected static final int USB_TIMEOUT
+    private android.hardware.usb.UsbEndpoint inEndpoint
+    private android.hardware.usb.UsbEndpoint outEndpoint
+    87:101:public static boolean isSupported(android.hardware.usb.UsbDevice)
+    public abstract boolean syncOpen()
+    public abstract void syncClose()
+    147:155:public int syncWrite(byte[],int)
+    162:170:public int syncRead(byte[],int)
+    188:190:public void debug(boolean)
+    395:397:protected void setSyncParams(android.hardware.usb.UsbEndpoint,android.hardware.usb.UsbEndpoint)
+com.felhr.usbserial.UsbSerialInterface:
+    public static final int DATA_BITS_5
+    public static final int DATA_BITS_6
+    public static final int DATA_BITS_7
+    public static final int DATA_BITS_8
+    public static final int STOP_BITS_1
+    public static final int STOP_BITS_15
+    public static final int STOP_BITS_2
+    public static final int PARITY_NONE
+    public static final int PARITY_ODD
+    public static final int PARITY_EVEN
+    public static final int PARITY_MARK
+    public static final int PARITY_SPACE
+    public static final int FLOW_CONTROL_OFF
+    public static final int FLOW_CONTROL_RTS_CTS
+    public static final int FLOW_CONTROL_DSR_DTR
+    public static final int FLOW_CONTROL_XON_XOFF
+    public abstract boolean open()
+    public abstract void write(byte[])
+    public abstract int read(com.felhr.usbserial.UsbSerialInterface$UsbReadCallback)
+    public abstract void close()
+    public abstract boolean syncOpen()
+    public abstract int syncWrite(byte[],int)
+    public abstract int syncRead(byte[],int)
+    public abstract void syncClose()
+    public abstract void setBaudRate(int)
+    public abstract void setDataBits(int)
+    public abstract void setStopBits(int)
+    public abstract void setParity(int)
+    public abstract void setFlowControl(int)
+    public abstract void setRTS(boolean)
+    public abstract void setDTR(boolean)
+    public abstract void getBreak(com.felhr.usbserial.UsbSerialInterface$UsbBreakCallback)
+    public abstract void getFrame(com.felhr.usbserial.UsbSerialInterface$UsbFrameCallback)
+    public abstract void getOverrun(com.felhr.usbserial.UsbSerialInterface$UsbOverrunCallback)
+    public abstract void getParity(com.felhr.usbserial.UsbSerialInterface$UsbParityCallback)
+com.felhr.usbserial.UsbSpiDevice
+com.felhr.usbserial.UsbSpiDevice$ReadThread
+com.felhr.usbserial.UsbSpiDevice$WriteThread
+com.felhr.usbserial.UsbSpiInterface
+com.felhr.usbserial.UsbSpiInterface$UsbMISOCallback
+com.felhr.usbserial.XdcVcpSerialDevice
+com.felhr.utils.HexData:
+    private static final java.lang.String HEXES
+    private static final java.lang.String HEX_INDICATOR
+    private static final java.lang.String SPACE
+    10:12:private HexData()
+    36:48:public static byte[] stringTobytes(java.lang.String)
+    53:56:public static java.lang.String hex4digits(java.lang.String)
+com.github.mjdev.libaums.BuildConfig
+com.github.mjdev.libaums.R
+com.github.mjdev.libaums.UsbMassStorageDevice:
+    private static final int INTERFACE_SUBCLASS
+    private static final int INTERFACE_PROTOCOL
+    262:271:public void close()
+    303:303:public com.github.mjdev.libaums.driver.BlockDeviceDriver getBlockDevice()
+com.github.mjdev.libaums.driver.BlockDeviceDriverFactory:
+    30:30:public BlockDeviceDriverFactory()
+com.github.mjdev.libaums.driver.file.FileBlockDeviceDriver
+com.github.mjdev.libaums.driver.scsi.commands.CommandBlockWrapper:
+    private static final int D_CBW_SIGNATURE
+    136:137:public void setdCbwTag(int)
+com.github.mjdev.libaums.driver.scsi.commands.CommandStatusWrapper:
+    public static final int COMMAND_PASSED
+    public static final int COMMAND_FAILED
+    public static final int PHASE_ERROR
+    public static final int SIZE
+    private static final int D_CSW_SIGNATURE
+    104:104:public int getdCswDataResidue()
+com.github.mjdev.libaums.driver.scsi.commands.ScsiInquiry:
+    private static final byte LENGTH
+    private static final byte OPCODE
+com.github.mjdev.libaums.driver.scsi.commands.ScsiInquiryResponse:
+    85:85:public boolean isRemovableMedia()
+    95:95:public byte getSpcVersion()
+    99:99:public byte getResponseDataFormat()
+com.github.mjdev.libaums.driver.scsi.commands.ScsiRead10:
+    private static final byte LENGTH
+    private static final byte OPCODE
+    63:65:public ScsiRead10(int,int,int)
+com.github.mjdev.libaums.driver.scsi.commands.ScsiReadCapacity:
+    private static final int RESPONSE_LENGTH
+    private static final byte LENGTH
+    private static final byte OPCODE
+com.github.mjdev.libaums.driver.scsi.commands.ScsiRequestSense
+com.github.mjdev.libaums.driver.scsi.commands.ScsiTestUnitReady:
+    private static final byte LENGTH
+    private static final byte OPCODE
+com.github.mjdev.libaums.driver.scsi.commands.ScsiWrite10:
+    private static final byte LENGTH
+    private static final byte OPCODE
+    63:65:public ScsiWrite10(int,int,int)
+com.github.mjdev.libaums.fs.AbstractUsbFile:
+    17:55:public com.github.mjdev.libaums.fs.UsbFile search(java.lang.String)
+    59:64:private com.github.mjdev.libaums.fs.UsbFile searchThis(java.lang.String)
+com.github.mjdev.libaums.fs.FileSystemFactory:
+    37:37:public FileSystemFactory()
+    79:80:public static void setTimeZone(java.util.TimeZone)
+com.github.mjdev.libaums.fs.UsbFile:
+    public static final java.lang.String separator
+    public abstract com.github.mjdev.libaums.fs.UsbFile search(java.lang.String)
+    public abstract void setName(java.lang.String)
+    public abstract long createdAt()
+    public abstract long lastModified()
+    public abstract long lastAccessed()
+    public abstract java.lang.String[] list()
+    public abstract long getLength()
+    public abstract void read(long,java.nio.ByteBuffer)
+    public abstract com.github.mjdev.libaums.fs.UsbFile createDirectory(java.lang.String)
+    public abstract void moveTo(com.github.mjdev.libaums.fs.UsbFile)
+com.github.mjdev.libaums.fs.UsbFileInputStream
+com.github.mjdev.libaums.fs.UsbFileStreamFactory
+com.github.mjdev.libaums.fs.fat32.FAT:
+    private static final int FAT32_EOF_CLUSTER
+com.github.mjdev.libaums.fs.fat32.Fat32BootSector:
+    private static final int BYTES_PER_SECTOR_OFF
+    private static final int SECTORS_PER_CLUSTER_OFF
+    private static final int RESERVED_COUNT_OFF
+    private static final int FAT_COUNT_OFF
+    private static final int TOTAL_SECTORS_OFF
+    private static final int SECTORS_PER_FAT_OFF
+    private static final int FLAGS_OFF
+    private static final int ROOT_DIR_CLUSTER_OFF
+    private static final int FS_INFO_SECTOR_OFF
+    private static final int VOLUME_LABEL_OFF
+    113:113:short getSectorsPerCluster()
+com.github.mjdev.libaums.fs.fat32.FatDirectory:
+    271:279:void renameEntry(com.github.mjdev.libaums.fs.fat32.FatLfnDirectoryEntry,java.lang.String)
+    367:410:public com.github.mjdev.libaums.fs.fat32.FatDirectory createDirectory(java.lang.String)
+    420:420:public long getLength()
+    435:438:public void setName(java.lang.String)
+    442:444:public long createdAt()
+    449:451:public long lastModified()
+    456:458:public long lastAccessed()
+    468:480:public java.lang.String[] list()
+    508:508:public void read(long,java.nio.ByteBuffer)
+    528:552:public void moveTo(com.github.mjdev.libaums.fs.UsbFile)
+    572:592:void move(com.github.mjdev.libaums.fs.fat32.FatLfnDirectoryEntry,com.github.mjdev.libaums.fs.UsbFile)
+    42:42:public bridge synthetic com.github.mjdev.libaums.fs.UsbFile createDirectory(java.lang.String)
+com.github.mjdev.libaums.fs.fat32.FatDirectoryEntry:
+    static final int SIZE
+    private static final int ATTR_OFF
+    private static final int FILE_SIZE_OFF
+    private static final int MSB_CLUSTER_OFF
+    private static final int LSB_CLUSTER_OFF
+    private static final int CREATED_DATE_OFF
+    private static final int CREATED_TIME_OFF
+    private static final int LAST_WRITE_DATE_OFF
+    private static final int LAST_WRITE_TIME_OFF
+    private static final int LAST_ACCESSED_DATE_OFF
+    private static final int FLAG_READONLY
+    private static final int FLAG_HIDDEN
+    private static final int FLAG_SYSTEM
+    private static final int FLAG_VOLUME_ID
+    private static final int FLAG_DIRECTORY
+    private static final int FLAG_ARCHIVE
+    private static final int SHORTNAME_CASE_OFF
+    static final int ENTRY_DELETED
+    253:254:void setDirectory()
+    298:298:boolean isArchive()
+    338:339:long getCreatedDateTime()
+    361:362:long getLastModifiedDateTime()
+    384:384:long getLastAccessedDateTime()
+    666:675:private static long decodeDateTime(int,int)
+com.github.mjdev.libaums.fs.fat32.FatFile:
+    106:107:public void setName(java.lang.String)
+    111:111:public long createdAt()
+    116:116:public long lastModified()
+    121:121:public long lastAccessed()
+    131:131:public java.lang.String[] list()
+    153:156:public void read(long,java.nio.ByteBuffer)
+    186:186:public com.github.mjdev.libaums.fs.UsbFile createDirectory(java.lang.String)
+    196:198:public void moveTo(com.github.mjdev.libaums.fs.UsbFile)
+com.github.mjdev.libaums.fs.fat32.FatLfnDirectoryEntry:
+    202:204:void setName(java.lang.String,com.github.mjdev.libaums.fs.fat32.ShortName)
+    254:255:void setLastAccessedTimeToNow()
+    276:277:void setDirectory()
+    299:304:static void copyDateTime(com.github.mjdev.libaums.fs.fat32.FatLfnDirectoryEntry,com.github.mjdev.libaums.fs.fat32.FatLfnDirectoryEntry)
+com.github.mjdev.libaums.fs.fat32.ShortNameGenerator:
+    31:31:ShortNameGenerator()
+com.github.mjdev.libaums.partition.Partition:
+    99:99:public java.lang.String getVolumeLabel()
+com.github.mjdev.libaums.partition.PartitionTable:
+    public abstract int getSize()
+com.github.mjdev.libaums.partition.PartitionTableEntry:
+    55:55:public int getPartitionType()
+    74:74:public int getTotalNumberOfSectors()
+com.github.mjdev.libaums.partition.PartitionTableFactory:
+    36:36:public PartitionTableFactory()
+com.github.mjdev.libaums.partition.PartitionTypes
+com.github.mjdev.libaums.partition.fs.FileSystemPartitionTable:
+    36:36:public int getSize()
+com.github.mjdev.libaums.partition.mbr.MasterBootRecord:
+    private static final int TABLE_OFFSET
+    private static final int TABLE_ENTRY_SIZE
+    124:124:public int getSize()
+com.github.mjdev.libaums.usb.UsbCommunication:
+    public static final int TRANSFER_TIMEOUT
+com.github.mjdev.libaums.usb.UsbCommunicationFactory:
+    41:42:public static void setUnderlyingUsbCommunication(com.github.mjdev.libaums.usb.UsbCommunicationFactory$UnderlyingUsbCommunication)
+com.google.zxing.Binarizer
+com.google.zxing.BinaryBitmap
+com.google.zxing.ChecksumException
+com.google.zxing.DecodeHintType
+com.google.zxing.Dimension
+com.google.zxing.FormatException
+com.google.zxing.InvertedLuminanceSource
+com.google.zxing.LuminanceSource
+com.google.zxing.MultiFormatReader
+com.google.zxing.MultiFormatWriter
+com.google.zxing.MultiFormatWriter$1
+com.google.zxing.NotFoundException
+com.google.zxing.PlanarYUVLuminanceSource
+com.google.zxing.RGBLuminanceSource
+com.google.zxing.Reader
+com.google.zxing.ReaderException
+com.google.zxing.Result
+com.google.zxing.ResultMetadataType
+com.google.zxing.ResultPoint
+com.google.zxing.ResultPointCallback
+com.google.zxing.Writer
+com.google.zxing.aztec.AztecDetectorResult
+com.google.zxing.aztec.AztecReader
+com.google.zxing.aztec.AztecWriter
+com.google.zxing.aztec.decoder.Decoder
+com.google.zxing.aztec.decoder.Decoder$1
+com.google.zxing.aztec.decoder.Decoder$Table
+com.google.zxing.aztec.detector.Detector
+com.google.zxing.aztec.detector.Detector$Point
+com.google.zxing.aztec.encoder.AztecCode
+com.google.zxing.aztec.encoder.BinaryShiftToken
+com.google.zxing.aztec.encoder.Encoder
+com.google.zxing.aztec.encoder.HighLevelEncoder
+com.google.zxing.aztec.encoder.HighLevelEncoder$1
+com.google.zxing.aztec.encoder.SimpleToken
+com.google.zxing.aztec.encoder.State
+com.google.zxing.aztec.encoder.Token
+com.google.zxing.client.result.AbstractDoCoMoResultParser
+com.google.zxing.client.result.AddressBookAUResultParser
+com.google.zxing.client.result.AddressBookDoCoMoResultParser
+com.google.zxing.client.result.AddressBookParsedResult
+com.google.zxing.client.result.BizcardResultParser
+com.google.zxing.client.result.BookmarkDoCoMoResultParser
+com.google.zxing.client.result.CalendarParsedResult
+com.google.zxing.client.result.EmailAddressParsedResult
+com.google.zxing.client.result.EmailAddressResultParser
+com.google.zxing.client.result.EmailDoCoMoResultParser
+com.google.zxing.client.result.ExpandedProductParsedResult
+com.google.zxing.client.result.ExpandedProductResultParser
+com.google.zxing.client.result.GeoParsedResult
+com.google.zxing.client.result.GeoResultParser
+com.google.zxing.client.result.ISBNParsedResult
+com.google.zxing.client.result.ISBNResultParser
+com.google.zxing.client.result.ParsedResult
+com.google.zxing.client.result.ParsedResultType
+com.google.zxing.client.result.ProductParsedResult
+com.google.zxing.client.result.ProductResultParser
+com.google.zxing.client.result.ResultParser
+com.google.zxing.client.result.SMSMMSResultParser
+com.google.zxing.client.result.SMSParsedResult
+com.google.zxing.client.result.SMSTOMMSTOResultParser
+com.google.zxing.client.result.SMTPResultParser
+com.google.zxing.client.result.TelParsedResult
+com.google.zxing.client.result.TelResultParser
+com.google.zxing.client.result.TextParsedResult
+com.google.zxing.client.result.URIParsedResult
+com.google.zxing.client.result.URIResultParser
+com.google.zxing.client.result.URLTOResultParser
+com.google.zxing.client.result.VCardResultParser
+com.google.zxing.client.result.VEventResultParser
+com.google.zxing.client.result.VINParsedResult
+com.google.zxing.client.result.VINResultParser
+com.google.zxing.client.result.WifiParsedResult
+com.google.zxing.client.result.WifiResultParser
+com.google.zxing.common.BitArray:
+    36:39:public BitArray(int)
+    77:78:public void set(int)
+    86:87:public void flip(int)
+    96:110:public int getNextSet(int)
+    119:133:public int getNextUnset(int)
+    144:145:public void setBulk(int,int)
+    154:170:public void setRange(int,int)
+    176:180:public void clear()
+    192:213:public boolean isRange(int,int,boolean)
+    287:287:public int[] getBitArray()
+    294:320:public void reverse()
+com.google.zxing.common.BitMatrix:
+    49:50:public BitMatrix(int)
+    82:93:public static com.google.zxing.common.BitMatrix parse(boolean[][])
+    97:150:public static com.google.zxing.common.BitMatrix parse(java.lang.String,java.lang.String,java.lang.String)
+    172:174:public void set(int,int)
+    177:179:public void unset(int,int)
+    188:190:public void flip(int,int)
+    199:211:public void xor(com.google.zxing.common.BitMatrix)
+    217:221:public void clear()
+    260:269:public com.google.zxing.common.BitArray getRow(int,com.google.zxing.common.BitArray)
+    277:278:public void setRow(int,com.google.zxing.common.BitArray)
+    284:296:public void rotate180()
+    304:345:public int[] getEnclosingRectangle()
+    354:370:public int[] getTopLeftOnBit()
+    374:392:public int[] getBottomRightOnBit()
+    399:399:public int getWidth()
+    406:406:public int getHeight()
+    413:413:public int getRowSize()
+    462:462:public java.lang.String toString(java.lang.String,java.lang.String,java.lang.String)
+com.google.zxing.common.BitSource
+com.google.zxing.common.CharacterSetECI:
+    103:106:public static com.google.zxing.common.CharacterSetECI getCharacterSetECIByValue(int)
+com.google.zxing.common.DecoderResult
+com.google.zxing.common.DefaultGridSampler
+com.google.zxing.common.DetectorResult
+com.google.zxing.common.GlobalHistogramBinarizer
+com.google.zxing.common.GridSampler
+com.google.zxing.common.HybridBinarizer
+com.google.zxing.common.PerspectiveTransform
+com.google.zxing.common.StringUtils
+com.google.zxing.common.detector.MathUtils
+com.google.zxing.common.detector.MonochromeRectangleDetector
+com.google.zxing.common.detector.WhiteRectangleDetector
+com.google.zxing.common.reedsolomon.GenericGF:
+    89:89:com.google.zxing.common.reedsolomon.GenericGFPoly getOne()
+    154:154:public int getSize()
+com.google.zxing.common.reedsolomon.GenericGFPoly:
+    98:115:int evaluateAt(int)
+    171:182:com.google.zxing.common.reedsolomon.GenericGFPoly multiply(int)
+com.google.zxing.common.reedsolomon.ReedSolomonDecoder
+com.google.zxing.common.reedsolomon.ReedSolomonException
+com.google.zxing.datamatrix.DataMatrixReader
+com.google.zxing.datamatrix.DataMatrixWriter
+com.google.zxing.datamatrix.decoder.BitMatrixParser
+com.google.zxing.datamatrix.decoder.DataBlock
+com.google.zxing.datamatrix.decoder.DecodedBitStreamParser
+com.google.zxing.datamatrix.decoder.DecodedBitStreamParser$1
+com.google.zxing.datamatrix.decoder.DecodedBitStreamParser$Mode
+com.google.zxing.datamatrix.decoder.Decoder
+com.google.zxing.datamatrix.decoder.Version
+com.google.zxing.datamatrix.decoder.Version$1
+com.google.zxing.datamatrix.decoder.Version$ECB
+com.google.zxing.datamatrix.decoder.Version$ECBlocks
+com.google.zxing.datamatrix.detector.Detector
+com.google.zxing.datamatrix.detector.Detector$1
+com.google.zxing.datamatrix.detector.Detector$ResultPointsAndTransitions
+com.google.zxing.datamatrix.detector.Detector$ResultPointsAndTransitionsComparator
+com.google.zxing.datamatrix.encoder.ASCIIEncoder
+com.google.zxing.datamatrix.encoder.Base256Encoder
+com.google.zxing.datamatrix.encoder.C40Encoder
+com.google.zxing.datamatrix.encoder.DataMatrixSymbolInfo144
+com.google.zxing.datamatrix.encoder.DefaultPlacement
+com.google.zxing.datamatrix.encoder.EdifactEncoder
+com.google.zxing.datamatrix.encoder.Encoder
+com.google.zxing.datamatrix.encoder.EncoderContext
+com.google.zxing.datamatrix.encoder.ErrorCorrection
+com.google.zxing.datamatrix.encoder.HighLevelEncoder
+com.google.zxing.datamatrix.encoder.SymbolInfo
+com.google.zxing.datamatrix.encoder.SymbolShapeHint
+com.google.zxing.datamatrix.encoder.TextEncoder
+com.google.zxing.datamatrix.encoder.X12Encoder
+com.google.zxing.maxicode.MaxiCodeReader
+com.google.zxing.maxicode.decoder.BitMatrixParser
+com.google.zxing.maxicode.decoder.DecodedBitStreamParser
+com.google.zxing.maxicode.decoder.Decoder
+com.google.zxing.multi.ByQuadrantReader
+com.google.zxing.multi.GenericMultipleBarcodeReader
+com.google.zxing.multi.MultipleBarcodeReader
+com.google.zxing.multi.qrcode.QRCodeMultiReader
+com.google.zxing.multi.qrcode.QRCodeMultiReader$1
+com.google.zxing.multi.qrcode.QRCodeMultiReader$SAComparator
+com.google.zxing.multi.qrcode.detector.MultiDetector
+com.google.zxing.multi.qrcode.detector.MultiFinderPatternFinder
+com.google.zxing.multi.qrcode.detector.MultiFinderPatternFinder$1
+com.google.zxing.multi.qrcode.detector.MultiFinderPatternFinder$ModuleSizeComparator
+com.google.zxing.oned.CodaBarReader
+com.google.zxing.oned.CodaBarWriter
+com.google.zxing.oned.Code128Reader
+com.google.zxing.oned.Code128Writer
+com.google.zxing.oned.Code128Writer$CType
+com.google.zxing.oned.Code39Reader
+com.google.zxing.oned.Code39Writer
+com.google.zxing.oned.Code93Reader
+com.google.zxing.oned.Code93Writer
+com.google.zxing.oned.EAN13Reader
+com.google.zxing.oned.EAN13Writer
+com.google.zxing.oned.EAN8Reader
+com.google.zxing.oned.EAN8Writer
+com.google.zxing.oned.EANManufacturerOrgSupport
+com.google.zxing.oned.ITFReader
+com.google.zxing.oned.ITFWriter
+com.google.zxing.oned.MultiFormatOneDReader
+com.google.zxing.oned.MultiFormatUPCEANReader
+com.google.zxing.oned.OneDReader
+com.google.zxing.oned.OneDimensionalCodeWriter
+com.google.zxing.oned.UPCAReader
+com.google.zxing.oned.UPCAWriter
+com.google.zxing.oned.UPCEANExtension2Support
+com.google.zxing.oned.UPCEANExtension5Support
+com.google.zxing.oned.UPCEANExtensionSupport
+com.google.zxing.oned.UPCEANReader
+com.google.zxing.oned.UPCEANWriter
+com.google.zxing.oned.UPCEReader
+com.google.zxing.oned.UPCEWriter
+com.google.zxing.oned.rss.AbstractRSSReader
+com.google.zxing.oned.rss.DataCharacter
+com.google.zxing.oned.rss.FinderPattern
+com.google.zxing.oned.rss.Pair
+com.google.zxing.oned.rss.RSS14Reader
+com.google.zxing.oned.rss.RSSUtils
+com.google.zxing.oned.rss.expanded.BitArrayBuilder
+com.google.zxing.oned.rss.expanded.ExpandedPair
+com.google.zxing.oned.rss.expanded.ExpandedRow
+com.google.zxing.oned.rss.expanded.RSSExpandedReader
+com.google.zxing.oned.rss.expanded.decoders.AI013103decoder
+com.google.zxing.oned.rss.expanded.decoders.AI01320xDecoder
+com.google.zxing.oned.rss.expanded.decoders.AI01392xDecoder
+com.google.zxing.oned.rss.expanded.decoders.AI01393xDecoder
+com.google.zxing.oned.rss.expanded.decoders.AI013x0x1xDecoder
+com.google.zxing.oned.rss.expanded.decoders.AI013x0xDecoder
+com.google.zxing.oned.rss.expanded.decoders.AI01AndOtherAIs
+com.google.zxing.oned.rss.expanded.decoders.AI01decoder
+com.google.zxing.oned.rss.expanded.decoders.AI01weightDecoder
+com.google.zxing.oned.rss.expanded.decoders.AbstractExpandedDecoder
+com.google.zxing.oned.rss.expanded.decoders.AnyAIDecoder
+com.google.zxing.oned.rss.expanded.decoders.BlockParsedResult
+com.google.zxing.oned.rss.expanded.decoders.CurrentParsingState
+com.google.zxing.oned.rss.expanded.decoders.CurrentParsingState$State
+com.google.zxing.oned.rss.expanded.decoders.DecodedChar
+com.google.zxing.oned.rss.expanded.decoders.DecodedInformation
+com.google.zxing.oned.rss.expanded.decoders.DecodedNumeric
+com.google.zxing.oned.rss.expanded.decoders.DecodedObject
+com.google.zxing.oned.rss.expanded.decoders.FieldParser
+com.google.zxing.oned.rss.expanded.decoders.GeneralAppIdDecoder
+com.google.zxing.pdf417.PDF417Common
+com.google.zxing.pdf417.PDF417Reader
+com.google.zxing.pdf417.PDF417ResultMetadata
+com.google.zxing.pdf417.PDF417Writer
+com.google.zxing.pdf417.decoder.BarcodeMetadata
+com.google.zxing.pdf417.decoder.BarcodeValue
+com.google.zxing.pdf417.decoder.BoundingBox
+com.google.zxing.pdf417.decoder.Codeword
+com.google.zxing.pdf417.decoder.DecodedBitStreamParser
+com.google.zxing.pdf417.decoder.DecodedBitStreamParser$1
+com.google.zxing.pdf417.decoder.DecodedBitStreamParser$Mode
+com.google.zxing.pdf417.decoder.DetectionResult
+com.google.zxing.pdf417.decoder.DetectionResultColumn
+com.google.zxing.pdf417.decoder.DetectionResultRowIndicatorColumn
+com.google.zxing.pdf417.decoder.PDF417CodewordDecoder
+com.google.zxing.pdf417.decoder.PDF417ScanningDecoder
+com.google.zxing.pdf417.decoder.ec.ErrorCorrection
+com.google.zxing.pdf417.decoder.ec.ModulusGF
+com.google.zxing.pdf417.decoder.ec.ModulusPoly
+com.google.zxing.pdf417.detector.Detector
+com.google.zxing.pdf417.detector.PDF417DetectorResult
+com.google.zxing.pdf417.encoder.BarcodeMatrix
+com.google.zxing.pdf417.encoder.BarcodeRow
+com.google.zxing.pdf417.encoder.Compaction
+com.google.zxing.pdf417.encoder.Dimensions
+com.google.zxing.pdf417.encoder.PDF417
+com.google.zxing.pdf417.encoder.PDF417ErrorCorrection
+com.google.zxing.pdf417.encoder.PDF417HighLevelEncoder
+com.google.zxing.pdf417.encoder.PDF417HighLevelEncoder$1
+com.google.zxing.qrcode.QRCodeReader
+com.google.zxing.qrcode.QRCodeWriter:
+    private static final int QUIET_ZONE_SIZE
+    44:44:public com.google.zxing.common.BitMatrix encode(java.lang.String,com.google.zxing.BarcodeFormat,int,int)
+com.google.zxing.qrcode.decoder.BitMatrixParser
+com.google.zxing.qrcode.decoder.DataBlock
+com.google.zxing.qrcode.decoder.DataMask
+com.google.zxing.qrcode.decoder.DataMask$1
+com.google.zxing.qrcode.decoder.DataMask$2
+com.google.zxing.qrcode.decoder.DataMask$3
+com.google.zxing.qrcode.decoder.DataMask$4
+com.google.zxing.qrcode.decoder.DataMask$5
+com.google.zxing.qrcode.decoder.DataMask$6
+com.google.zxing.qrcode.decoder.DataMask$7
+com.google.zxing.qrcode.decoder.DataMask$8
+com.google.zxing.qrcode.decoder.DecodedBitStreamParser
+com.google.zxing.qrcode.decoder.DecodedBitStreamParser$1
+com.google.zxing.qrcode.decoder.Decoder
+com.google.zxing.qrcode.decoder.ErrorCorrectionLevel:
+    53:56:public static com.google.zxing.qrcode.decoder.ErrorCorrectionLevel forBits(int)
+com.google.zxing.qrcode.decoder.FormatInformation
+com.google.zxing.qrcode.decoder.Mode:
+    53:76:public static com.google.zxing.qrcode.decoder.Mode forBits(int)
+com.google.zxing.qrcode.decoder.QRCodeDecoderMetaData
+com.google.zxing.qrcode.decoder.Version:
+    70:70:public int[] getAlignmentPatternCenters()
+    93:99:public static com.google.zxing.qrcode.decoder.Version getProvisionalVersionForDimension(int)
+    111:133:static com.google.zxing.qrcode.decoder.Version decodeVersionInformation(int)
+    140:175:com.google.zxing.common.BitMatrix buildFunctionPattern()
+com.google.zxing.qrcode.detector.AlignmentPattern
+com.google.zxing.qrcode.detector.AlignmentPatternFinder
+com.google.zxing.qrcode.detector.Detector
+com.google.zxing.qrcode.detector.FinderPattern
+com.google.zxing.qrcode.detector.FinderPatternFinder
+com.google.zxing.qrcode.detector.FinderPatternFinder$1
+com.google.zxing.qrcode.detector.FinderPatternFinder$CenterComparator
+com.google.zxing.qrcode.detector.FinderPatternFinder$FurthestFromAverageComparator
+com.google.zxing.qrcode.detector.FinderPatternInfo
+com.google.zxing.qrcode.encoder.ByteMatrix:
+    59:60:public void set(int,int,byte)
+com.google.zxing.qrcode.encoder.Encoder:
+    static final java.lang.String DEFAULT_BYTE_MODE_ENCODING
+    52:53:private Encoder()
+    72:72:public static com.google.zxing.qrcode.encoder.QRCode encode(java.lang.String,com.google.zxing.qrcode.decoder.ErrorCorrectionLevel)
+    207:207:public static com.google.zxing.qrcode.decoder.Mode chooseMode(java.lang.String)
+com.google.zxing.qrcode.encoder.MaskUtil:
+    private static final int N1
+    private static final int N2
+    private static final int N3
+    private static final int N4
+    32:34:private MaskUtil()
+com.google.zxing.qrcode.encoder.MatrixUtil:
+    private static final int VERSION_INFO_POLY
+    private static final int TYPE_INFO_POLY
+    private static final int TYPE_INFO_MASK_PATTERN
+    118:120:private MatrixUtil()
+com.google.zxing.qrcode.encoder.QRCode:
+    public static final int NUM_MASK_PATTERNS
+    42:42:public com.google.zxing.qrcode.decoder.Mode getMode()
+    46:46:public com.google.zxing.qrcode.decoder.ErrorCorrectionLevel getECLevel()
+    50:50:public com.google.zxing.qrcode.decoder.Version getVersion()
+    54:54:public int getMaskPattern()
+com.qmuiteam.qmui.BuildConfig
+com.qmuiteam.qmui.QMUIInterpolatorStaticHolder:
+    31:31:public QMUIInterpolatorStaticHolder()
+com.qmuiteam.qmui.QMUILog:
+    24:24:public QMUILog()
+    36:37:public static void setDelegete(com.qmuiteam.qmui.QMUILog$QMUILogDelegate)
+    40:43:public static varargs void e(java.lang.String,java.lang.String,java.lang.Object[])
+    52:55:public static varargs void i(java.lang.String,java.lang.String,java.lang.Object[])
+    58:61:public static varargs void d(java.lang.String,java.lang.String,java.lang.Object[])
+com.qmuiteam.qmui.QMUILog$QMUILogDelegate:
+    public varargs abstract void e(java.lang.String,java.lang.String,java.lang.Object[])
+    public varargs abstract void i(java.lang.String,java.lang.String,java.lang.Object[])
+    public varargs abstract void d(java.lang.String,java.lang.String,java.lang.Object[])
+com.qmuiteam.qmui.R:
+    10:10:private R()
+com.qmuiteam.qmui.R$anim
+com.qmuiteam.qmui.R$attr:
+    43:43:private R$attr()
+com.qmuiteam.qmui.R$bool
+com.qmuiteam.qmui.R$color:
+    599:599:private R$color()
+com.qmuiteam.qmui.R$dimen:
+    743:743:private R$dimen()
+com.qmuiteam.qmui.R$drawable
+com.qmuiteam.qmui.R$id:
+    1035:1035:private R$id()
+com.qmuiteam.qmui.R$integer
+com.qmuiteam.qmui.R$layout:
+    1210:1210:private R$layout()
+com.qmuiteam.qmui.R$string:
+    1265:1265:private R$string()
+com.qmuiteam.qmui.R$style:
+    1312:1312:private R$style()
+com.qmuiteam.qmui.R$styleable:
+    1753:1753:private R$styleable()
+com.qmuiteam.qmui.alpha.QMUIAlphaFrameLayout:
+    31:32:public QMUIAlphaFrameLayout(android.content.Context)
+com.qmuiteam.qmui.alpha.QMUIAlphaImageButton
+com.qmuiteam.qmui.alpha.QMUIAlphaLinearLayout:
+    31:32:public QMUIAlphaLinearLayout(android.content.Context)
+com.qmuiteam.qmui.alpha.QMUIAlphaRelativeLayout
+com.qmuiteam.qmui.alpha.QMUIAlphaTextView:
+    31:32:public QMUIAlphaTextView(android.content.Context)
+    39:40:public QMUIAlphaTextView(android.content.Context,android.util.AttributeSet,int)
+com.qmuiteam.qmui.alpha.QMUIAlphaViewHelper:
+    34:55:public QMUIAlphaViewHelper(android.view.View,float,float)
+com.qmuiteam.qmui.arch.BuildConfig
+com.qmuiteam.qmui.arch.InnerBaseActivity
+com.qmuiteam.qmui.arch.QMUIActivity
+com.qmuiteam.qmui.arch.QMUIActivity$1
+com.qmuiteam.qmui.arch.QMUIActivity$2
+com.qmuiteam.qmui.arch.QMUIFragment
+com.qmuiteam.qmui.arch.QMUIFragment$1
+com.qmuiteam.qmui.arch.QMUIFragment$2
+com.qmuiteam.qmui.arch.QMUIFragment$2$1
+com.qmuiteam.qmui.arch.QMUIFragment$3
+com.qmuiteam.qmui.arch.QMUIFragment$TransitionConfig
+com.qmuiteam.qmui.arch.QMUIFragmentActivity
+com.qmuiteam.qmui.arch.QMUIFragmentActivity$1
+com.qmuiteam.qmui.arch.QMUISwipeBackActivityManager:
+    36:40:public static com.qmuiteam.qmui.arch.QMUISwipeBackActivityManager getInstance()
+    97:115:public android.app.Activity getPenultimateActivity(android.app.Activity)
+    119:119:public boolean canSwipeBack()
+com.qmuiteam.qmui.arch.R
+com.qmuiteam.qmui.arch.R$anim
+com.qmuiteam.qmui.arch.R$attr
+com.qmuiteam.qmui.arch.R$drawable
+com.qmuiteam.qmui.arch.R$id
+com.qmuiteam.qmui.arch.R$integer
+com.qmuiteam.qmui.arch.R$string
+com.qmuiteam.qmui.arch.R$style
+com.qmuiteam.qmui.arch.R$styleable
+com.qmuiteam.qmui.arch.SwipeBackLayout
+com.qmuiteam.qmui.arch.SwipeBackLayout$1
+com.qmuiteam.qmui.arch.SwipeBackLayout$Callback
+com.qmuiteam.qmui.arch.SwipeBackLayout$ListenerRemover
+com.qmuiteam.qmui.arch.SwipeBackLayout$SwipeListener
+com.qmuiteam.qmui.arch.SwipeBackLayout$ViewDragCallback
+com.qmuiteam.qmui.arch.SwipeBackgroundView
+com.qmuiteam.qmui.arch.SwipeBackgroundView$ViewInfo
+com.qmuiteam.qmui.arch.Utils
+com.qmuiteam.qmui.arch.Utils$OpHandler
+com.qmuiteam.qmui.layout.IQMUILayout
+com.qmuiteam.qmui.layout.IQMUILayout$HideRadiusSide
+com.qmuiteam.qmui.layout.QMUIButton:
+    39:41:public QMUIButton(android.content.Context,android.util.AttributeSet)
+    44:46:public QMUIButton(android.content.Context,android.util.AttributeSet,int)
+    56:58:public void updateTopDivider(int,int,int,int)
+    62:64:public void updateBottomDivider(int,int,int,int)
+    68:70:public void updateLeftDivider(int,int,int,int)
+    73:75:public void updateRightDivider(int,int,int,int)
+    87:89:public void onlyShowBottomDivider(int,int,int,int)
+    99:101:public void onlyShowRightDivider(int,int,int,int)
+    152:153:public void setRadiusAndShadow(int,int,float)
+    157:158:public void setRadiusAndShadow(int,int,int,float)
+    162:163:public void setRadiusAndShadow(int,int,int,int,float)
+    172:173:public void setRadius(int,int)
+    182:183:public void setOutlineInset(int,int,int,int)
+    205:209:public boolean setWidthLimit(int)
+    214:218:public boolean setHeightLimit(int)
+    223:224:public void setUseThemeGeneralShadowElevation()
+com.qmuiteam.qmui.layout.QMUIFrameLayout:
+    35:37:public QMUIFrameLayout(android.content.Context)
+    69:71:public void updateTopDivider(int,int,int,int)
+    75:77:public void updateBottomDivider(int,int,int,int)
+    81:83:public void updateLeftDivider(int,int,int,int)
+    87:89:public void updateRightDivider(int,int,int,int)
+    94:96:public void onlyShowTopDivider(int,int,int,int)
+    101:103:public void onlyShowBottomDivider(int,int,int,int)
+    107:109:public void onlyShowLeftDivider(int,int,int,int)
+    113:115:public void onlyShowRightDivider(int,int,int,int)
+    144:145:public void setRadiusAndShadow(int,int,float)
+    149:150:public void setRadiusAndShadow(int,int,int,float)
+    154:155:public void setRadiusAndShadow(int,int,int,int,float)
+    164:165:public void setRadius(int,int)
+    174:175:public void setOutlineInset(int,int,int,int)
+    207:211:public boolean setWidthLimit(int)
+    216:220:public boolean setHeightLimit(int)
+    225:226:public void setUseThemeGeneralShadowElevation()
+com.qmuiteam.qmui.layout.QMUILayoutHelper:
+    207:209:public void setUseThemeGeneralShadowElevation()
+    226:230:public boolean setWidthLimit(int)
+    235:239:public boolean setHeightLimit(int)
+    259:270:public void setOutlineInset(int,int,int,int)
+    354:358:public void setRadius(int,int)
+    486:490:public void updateBottomDivider(int,int,int,int)
+    502:506:public void updateRightDivider(int,int,int,int)
+    520:524:public void onlyShowBottomDivider(int,int,int,int)
+    536:540:public void onlyShowRightDivider(int,int,int,int)
+com.qmuiteam.qmui.layout.QMUILinearLayout:
+    35:37:public QMUILinearLayout(android.content.Context)
+    57:59:public void updateTopDivider(int,int,int,int)
+    63:65:public void updateBottomDivider(int,int,int,int)
+    69:71:public void updateLeftDivider(int,int,int,int)
+    75:77:public void updateRightDivider(int,int,int,int)
+    82:84:public void onlyShowTopDivider(int,int,int,int)
+    89:91:public void onlyShowBottomDivider(int,int,int,int)
+    95:97:public void onlyShowLeftDivider(int,int,int,int)
+    101:103:public void onlyShowRightDivider(int,int,int,int)
+    143:144:public void setRadiusAndShadow(int,int,float)
+    148:149:public void setRadiusAndShadow(int,int,int,float)
+    153:154:public void setRadiusAndShadow(int,int,int,int,float)
+    163:164:public void setRadius(int,int)
+    173:174:public void setOutlineInset(int,int,int,int)
+    206:210:public boolean setWidthLimit(int)
+    215:219:public boolean setHeightLimit(int)
+    224:225:public void setUseThemeGeneralShadowElevation()
+com.qmuiteam.qmui.layout.QMUIPriorityLinearLayout
+com.qmuiteam.qmui.layout.QMUIPriorityLinearLayout$LayoutParams
+com.qmuiteam.qmui.layout.QMUIRelativeLayout
+com.qmuiteam.qmui.link.QMUILinkify
+com.qmuiteam.qmui.link.QMUILinkify$1
+com.qmuiteam.qmui.link.QMUILinkify$2
+com.qmuiteam.qmui.link.QMUILinkify$3
+com.qmuiteam.qmui.link.QMUILinkify$4
+com.qmuiteam.qmui.link.QMUILinkify$5
+com.qmuiteam.qmui.link.QMUILinkify$6
+com.qmuiteam.qmui.link.QMUILinkify$7
+com.qmuiteam.qmui.link.QMUILinkify$LinkSpec
+com.qmuiteam.qmui.link.QMUILinkify$MatchFilter
+com.qmuiteam.qmui.link.QMUILinkify$StyleableURLSpan
+com.qmuiteam.qmui.link.QMUILinkify$TransformFilter
+com.qmuiteam.qmui.link.QMUILinkify$WebUrlMatcher
+com.qmuiteam.qmui.link.QMUILinkify$WebUrlPattern
+com.qmuiteam.qmui.link.QMUIScrollingMovementMethod
+com.qmuiteam.qmui.qqface.IQMUIQQFaceManager
+com.qmuiteam.qmui.qqface.QMUIQQFaceCompiler
+com.qmuiteam.qmui.qqface.QMUIQQFaceCompiler$Element
+com.qmuiteam.qmui.qqface.QMUIQQFaceCompiler$ElementList
+com.qmuiteam.qmui.qqface.QMUIQQFaceCompiler$ElementType
+com.qmuiteam.qmui.qqface.QMUIQQFaceView
+com.qmuiteam.qmui.qqface.QMUIQQFaceView$1
+com.qmuiteam.qmui.qqface.QMUIQQFaceView$2
+com.qmuiteam.qmui.qqface.QMUIQQFaceView$PressCancelAction
+com.qmuiteam.qmui.qqface.QMUIQQFaceView$QQFaceViewListener
+com.qmuiteam.qmui.qqface.QMUIQQFaceView$SpanInfo
+com.qmuiteam.qmui.qqface.QQFace
+com.qmuiteam.qmui.span.QMUIAlignMiddleImageSpan:
+    public static final int ALIGN_MIDDLE
+    61:65:public QMUIAlignMiddleImageSpan(android.graphics.drawable.Drawable,int,float)
+com.qmuiteam.qmui.span.QMUIBlockSpaceSpan
+com.qmuiteam.qmui.span.QMUICustomTypefaceSpan
+com.qmuiteam.qmui.span.QMUICustomTypefaceSpan$1
+com.qmuiteam.qmui.span.QMUIOnSpanClickListener
+com.qmuiteam.qmui.span.QMUITextSizeSpan
+com.qmuiteam.qmui.span.QMUITouchableSpan
+com.qmuiteam.qmui.util.QMUIActivityLifecycleCallbacks
+com.qmuiteam.qmui.util.QMUICollapsingTextHelper:
+    private static final boolean DEBUG_DRAW
+    87:140:public QMUICollapsingTextHelper(android.view.View)
+    143:145:public void setTextSizeInterpolator(android.view.animation.Interpolator)
+    148:150:public void setPositionInterpolator(android.view.animation.Interpolator)
+    153:157:public void setExpandedTextSize(float)
+    160:164:public void setCollapsedTextSize(float)
+    303:305:public void setTypefaces(android.graphics.Typeface)
+    323:329:public void setExpansionFraction(float)
+    348:348:public float getExpansionFraction()
+    352:352:public float getCollapsedTextSize()
+    356:356:public float getExpandedTextSize()
+    703:703:android.content.res.ColorStateList getExpandedTextColor()
+    707:707:android.content.res.ColorStateList getCollapsedTextColor()
+com.qmuiteam.qmui.util.QMUIColorHelper:
+    26:26:public QMUIColorHelper()
+    29:29:public static int setColorAlpha(int,float)
+    41:42:public static int setColorAlpha(int,float,boolean)
+    83:83:public static java.lang.String colorToString(int)
+com.qmuiteam.qmui.util.QMUIDeviceHelper:
+    private static final java.lang.String TAG
+    private static final java.lang.String KEY_MIUI_VERSION_NAME
+    private static final java.lang.String KEY_FLYME_VERSION_NAME
+    private static final java.lang.String FLYME
+    private static final java.lang.String ZTEC2016
+    private static final java.lang.String ZUKZ1
+    private static final java.lang.String ESSENTIAL
+    44:44:public QMUIDeviceHelper()
+    141:172:public static boolean isFlymeVersionHigher5_2_4()
+    235:243:public static boolean isFloatWindowOpAllowed(android.content.Context)
+    250:262:private static boolean checkOp(android.content.Context,int)
+com.qmuiteam.qmui.util.QMUIDirection
+com.qmuiteam.qmui.util.QMUIDisplayHelper:
+    private static final java.lang.String TAG
+    private static final java.lang.String VIVO_NAVIGATION_GESTURE
+    private static final java.lang.String HUAWAI_DISPLAY_NOTCH_STATUS
+    private static final java.lang.String XIAOMI_DISPLAY_NOTCH_STATUS
+    private static final java.lang.String XIAOMI_FULLSCREEN_GESTURE
+    50:50:public QMUIDisplayHelper()
+    83:83:public static int dpToPx(int)
+    93:93:public static int pxToDp(float)
+    134:159:public static int[] getRealScreenSize(android.content.Context)
+    164:195:private static int[] doGetRealScreenSize(android.content.Context)
+    205:205:public static int getUsefulScreenWidth(android.app.Activity)
+    209:209:public static int getUsefulScreenWidth(android.view.View)
+    213:235:public static int getUsefulScreenWidth(android.content.Context,boolean)
+    245:245:public static int getUsefulScreenHeight(android.app.Activity)
+    249:249:public static int getUsefulScreenHeight(android.view.View)
+    253:270:private static int getUsefulScreenHeight(android.content.Context,boolean)
+    275:282:public static boolean isNavMenuExist(android.content.Context)
+    312:312:public static int px2dp(android.content.Context,int)
+    322:322:public static int px2sp(android.content.Context,int)
+    332:337:public static boolean hasStatusBar(android.content.Context)
+    347:353:public static int getActionBarHeight(android.content.Context)
+    391:400:public static int getNavMenuHeight(android.content.Context)
+    413:422:public static final boolean hasCamera(android.content.Context)
+    434:440:public static boolean hasHardwareMenuKey(android.content.Context)
+    451:452:public static boolean hasInternet(android.content.Context)
+    463:469:public static boolean isPackageExist(android.content.Context,java.lang.String)
+    478:479:public static boolean isSdcardReady()
+    489:499:public static java.lang.String getCurCountryLan(android.content.Context)
+    509:518:public static boolean isZhCN(android.content.Context)
+    527:531:public static void setFullScreen(android.app.Activity)
+    539:542:public static void cancelFullScreen(android.app.Activity)
+    551:552:public static boolean isFullScreen(android.app.Activity)
+    557:557:public static boolean isElevationSupported()
+    561:568:public static boolean hasNavigationBar(android.content.Context)
+    577:596:private static boolean deviceHasNavigationBar()
+    612:613:public static boolean vivoNavigationGestureEnabled(android.content.Context)
+    632:632:public static boolean xiaomiIsNotchSetToShowInSetting(android.content.Context)
+com.qmuiteam.qmui.util.QMUIDrawableHelper:
+    65:86:public static android.graphics.Bitmap createBitmapFromView(android.view.View,float)
+    90:90:public static android.graphics.Bitmap createBitmapFromView(android.view.View)
+    97:111:public static android.graphics.Bitmap createBitmapFromView(android.view.View,int,int,int,int)
+    126:133:public static android.graphics.Bitmap createBitmapSafely(int,int,android.graphics.Bitmap$Config,int)
+    148:164:public static android.graphics.drawable.BitmapDrawable createDrawableWithSize(android.content.res.Resources,int,int,int,int)
+    183:205:public static android.graphics.Bitmap drawableToBitmap(android.graphics.drawable.Drawable)
+    224:232:public static android.graphics.drawable.GradientDrawable createCircleGradientDrawable(int,int,int,float,float)
+    268:271:public static android.graphics.drawable.Drawable getVectorDrawable(android.content.Context,int)
+    276:284:public static android.graphics.Bitmap vectorDrawableToBitmap(android.content.Context,int)
+com.qmuiteam.qmui.util.QMUIKeyboardHelper
+com.qmuiteam.qmui.util.QMUIKeyboardHelper$1
+com.qmuiteam.qmui.util.QMUIKeyboardHelper$2
+com.qmuiteam.qmui.util.QMUIKeyboardHelper$3
+com.qmuiteam.qmui.util.QMUIKeyboardHelper$KeyboardVisibilityEventListener
+com.qmuiteam.qmui.util.QMUILangHelper:
+    29:29:public QMUILangHelper()
+    38:39:public static int getNumberDigits(int)
+    44:45:public static int getNumberDigits(long)
+    55:55:public static java.lang.String regularizePrice(float)
+    65:65:public static java.lang.String regularizePrice(double)
+    88:88:public static int constrain(int,int,int)
+    92:92:public static float constrain(float,float,float)
+com.qmuiteam.qmui.util.QMUINotchHelper:
+    private static final java.lang.String TAG
+    private static final int NOTCH_IN_SCREEN_VOIO
+    private static final java.lang.String MIUI_NOTCH
+    38:38:public QMUINotchHelper()
+    127:144:public static boolean hasNotch(android.app.Activity)
+    179:182:public static int getSafeInsetTop(android.app.Activity)
+    186:189:public static int getSafeInsetBottom(android.app.Activity)
+    193:196:public static int getSafeInsetLeft(android.app.Activity)
+    200:203:public static int getSafeInsetRight(android.app.Activity)
+    208:211:public static int getSafeInsetTop(android.view.View)
+    215:218:public static int getSafeInsetBottom(android.view.View)
+    237:241:private static void clearAllRectInfo()
+    244:246:private static void clearPortraitRectInfo()
+    254:260:private static android.graphics.Rect getSafeInsetRect(android.app.Activity)
+    427:431:public static int getNotchWidthInXiaomi(android.content.Context)
+    443:443:public static int getNotchWidthInVivo(android.content.Context)
+com.qmuiteam.qmui.util.QMUIPackageHelper
+com.qmuiteam.qmui.util.QMUIResHelper:
+    37:37:public QMUIResHelper()
+    52:54:public static android.content.res.ColorStateList getAttrColorStateList(android.content.Context,int)
+    58:62:public static android.graphics.drawable.Drawable getAttrDrawable(android.content.Context,int)
+    66:72:public static android.graphics.drawable.Drawable getAttrDrawable(android.content.Context,android.content.res.TypedArray,int)
+com.qmuiteam.qmui.util.QMUISpanHelper:
+    31:31:public QMUISpanHelper()
+    51:51:public static java.lang.CharSequence generateHorIconText(java.lang.CharSequence,int,android.graphics.drawable.Drawable,int,android.graphics.drawable.Drawable)
+com.qmuiteam.qmui.util.QMUIStatusBarHelper:
+    private static final int STATUSBAR_TYPE_DEFAULT
+    private static final int STATUSBAR_TYPE_MIUI
+    private static final int STATUSBAR_TYPE_FLYME
+    private static final int STATUSBAR_TYPE_ANDROID6
+    private static final int STATUS_BAR_DEFAULT_HEIGHT_DP
+    private static java.lang.Integer sTransparentValue
+    41:41:public QMUIStatusBarHelper()
+    76:78:public static void translucent(android.app.Activity,int)
+    221:234:public static boolean setStatusBarDarkMode(android.app.Activity)
+    366:373:public static boolean isFullScreen(android.app.Activity)
+    381:407:public static java.lang.Integer getStatusBarAPITransparentValue(android.content.Context)
+    471:472:public static void setVirtualDensity(float)
+    475:476:public static void setVirtualDensityDpi(float)
+com.qmuiteam.qmui.util.QMUIViewHelper:
+    61:61:public QMUIViewHelper()
+    72:79:public static void checkAppCompatTheme(android.content.Context)
+    85:85:public static android.view.View getActivityRoot(android.app.Activity)
+    93:98:public static void requestApplyInsets(android.view.Window)
+    107:123:public static void expendTouchArea(android.view.View,int)
+    143:144:public static void setBackgroundKeepingPadding(android.view.View,int)
+    156:161:public static void playBackgroundBlinkAnimation(android.view.View,int)
+    173:210:public static android.animation.Animator playViewBackgroundAnimation(android.view.View,int,int[],int,java.lang.Runnable)
+    214:215:public static void playViewBackgroundAnimation(android.view.View,int,int[],int)
+    229:271:public static void playViewBackgroundAnimation(android.view.View,int,int,long,int,int,java.lang.Runnable)
+    274:275:public static void playViewBackgroundAnimation(android.view.View,int,int,long)
+    278:289:public static int generateViewId()
+    303:320:public static android.view.animation.AlphaAnimation fadeIn(android.view.View,int,android.view.animation.Animation$AnimationListener,boolean)
+    334:368:public static android.view.animation.AlphaAnimation fadeOut(android.view.View,int,android.view.animation.Animation$AnimationListener,boolean)
+    373:384:public static void clearValueAnimator(android.animation.Animator)
+    387:391:public static android.graphics.Rect calcViewScreenLocation(android.view.View)
+    408:452:public static android.view.animation.TranslateAnimation slideIn(android.view.View,int,android.view.animation.Animation$AnimationListener,boolean,com.qmuiteam.qmui.util.QMUIDirection)
+    470:531:public static android.view.animation.TranslateAnimation slideOut(android.view.View,int,android.view.animation.Animation$AnimationListener,boolean,com.qmuiteam.qmui.util.QMUIDirection)
+    543:546:public static void setPaddingLeft(android.view.View,int)
+    555:558:public static void setPaddingTop(android.view.View,int)
+    567:570:public static void setPaddingRight(android.view.View,int)
+    594:594:public static boolean getIsLastLineSpacingExtraError()
+    606:620:public static android.view.View findViewFromViewStub(android.view.View,int,int)
+    627:644:public static android.view.View findViewFromViewStub(android.view.View,int,int,int)
+    653:663:public static void safeSetImageViewSelected(android.widget.ImageView,boolean)
+    667:669:public static android.graphics.ColorFilter setImageViewTintColor(android.widget.ImageView,int)
+    679:689:public static boolean isListViewAlreadyAtBottom(android.widget.ListView)
+com.qmuiteam.qmui.util.QMUIViewHelper$1
+com.qmuiteam.qmui.util.QMUIViewHelper$2
+com.qmuiteam.qmui.util.QMUIViewHelper$3
+com.qmuiteam.qmui.util.QMUIViewHelper$4
+com.qmuiteam.qmui.util.QMUIViewHelper$5
+com.qmuiteam.qmui.util.QMUIViewHelper$6
+com.qmuiteam.qmui.util.QMUIViewHelper$7
+com.qmuiteam.qmui.util.QMUIViewHelper$ViewGroupHelper:
+    706:706:private QMUIViewHelper$ViewGroupHelper()
+com.qmuiteam.qmui.util.QMUIViewOffsetHelper:
+    80:85:public boolean setTopAndBottomOffset(int)
+    95:100:public boolean setLeftAndRightOffset(int)
+    104:104:public int getTopAndBottomOffset()
+    108:108:public int getLeftAndRightOffset()
+    116:116:public int getLayoutLeft()
+com.qmuiteam.qmui.util.QMUIWindowHelper
+com.qmuiteam.qmui.widget.QMUIAnimationListView
+com.qmuiteam.qmui.widget.QMUIAnimationListView$1
+com.qmuiteam.qmui.widget.QMUIAnimationListView$1$1
+com.qmuiteam.qmui.widget.QMUIAnimationListView$2
+com.qmuiteam.qmui.widget.QMUIAnimationListView$3
+com.qmuiteam.qmui.widget.QMUIAnimationListView$4
+com.qmuiteam.qmui.widget.QMUIAnimationListView$5
+com.qmuiteam.qmui.widget.QMUIAnimationListView$6
+com.qmuiteam.qmui.widget.QMUIAnimationListView$ManipulateAnimatorListener
+com.qmuiteam.qmui.widget.QMUIAnimationListView$Manipulator
+com.qmuiteam.qmui.widget.QMUIAnimationListView$WrapperAdapter
+com.qmuiteam.qmui.widget.QMUIAnimationListView$WrapperAdapter$1
+com.qmuiteam.qmui.widget.QMUIAppBarLayout
+com.qmuiteam.qmui.widget.QMUIAppBarLayout$1
+com.qmuiteam.qmui.widget.QMUICollapsingTopBarLayout:
+    private static final int DEFAULT_SCRIM_ANIMATION_DURATION
+    124:125:public QMUICollapsingTopBarLayout(android.content.Context)
+    128:129:public QMUICollapsingTopBarLayout(android.content.Context,android.util.AttributeSet)
+    94:210:public QMUICollapsingTopBarLayout(android.content.Context,android.util.AttributeSet,int)
+    213:218:private android.support.v4.view.WindowInsetsCompat setWindowInsets(android.support.v4.view.WindowInsetsCompat)
+    497:497:public boolean isTitleEnabled()
+    882:887:public void setExpandedTitleMargin(int,int,int,int)
+    90:90:static synthetic android.support.v4.view.WindowInsetsCompat access$000(com.qmuiteam.qmui.widget.QMUICollapsingTopBarLayout,android.support.v4.view.WindowInsetsCompat)
+    90:90:static synthetic int access$100(com.qmuiteam.qmui.widget.QMUICollapsingTopBarLayout)
+com.qmuiteam.qmui.widget.QMUICollapsingTopBarLayout$1
+com.qmuiteam.qmui.widget.QMUICollapsingTopBarLayout$LayoutParams:
+    private static final float DEFAULT_PARALLAX_MULTIPLIER
+    public static final int COLLAPSE_MODE_OFF
+    public static final int COLLAPSE_MODE_PIN
+    public static final int COLLAPSE_MODE_PARALLAX
+    1116:1139:public QMUICollapsingTopBarLayout$LayoutParams(int,int,int)
+    1116:1147:public QMUICollapsingTopBarLayout$LayoutParams(android.view.ViewGroup$MarginLayoutParams)
+    1116:1154:public QMUICollapsingTopBarLayout$LayoutParams(android.widget.FrameLayout$LayoutParams)
+    1163:1164:public void setCollapseMode(int)
+    1174:1174:public int getCollapseMode()
+    1196:1196:public float getParallaxMultiplier()
+com.qmuiteam.qmui.widget.QMUICollapsingTopBarLayout$OffsetUpdateListener:
+    1235:1268:public void onOffsetChanged(android.support.design.widget.AppBarLayout,int)
+com.qmuiteam.qmui.widget.QMUIEmptyView
+com.qmuiteam.qmui.widget.QMUIFloatLayout
+com.qmuiteam.qmui.widget.QMUIFloatLayout$OnLineCountChangeListener
+com.qmuiteam.qmui.widget.QMUIFontFitTextView
+com.qmuiteam.qmui.widget.QMUIItemViewsAdapter:
+    128:134:public void replaceItem(int,java.lang.Object)
+com.qmuiteam.qmui.widget.QMUILoadingView:
+    private static final int LINE_COUNT
+    private static final int DEGREE_PER_LINE
+    50:51:public QMUILoadingView(android.content.Context)
+    43:91:public QMUILoadingView(android.content.Context,int,int)
+com.qmuiteam.qmui.widget.QMUINotchConsumeLayout
+com.qmuiteam.qmui.widget.QMUIObservableScrollView:
+    36:46:public QMUIObservableScrollView(android.content.Context,android.util.AttributeSet)
+    36:50:public QMUIObservableScrollView(android.content.Context,android.util.AttributeSet,int)
+    53:60:public void addOnScrollChangedListener(com.qmuiteam.qmui.widget.QMUIObservableScrollView$OnScrollChangedListener)
+    63:67:public void removeOnScrollChangedListener(com.qmuiteam.qmui.widget.QMUIObservableScrollView$OnScrollChangedListener)
+com.qmuiteam.qmui.widget.QMUIPagerAdapter
+com.qmuiteam.qmui.widget.QMUIProgressBar
+com.qmuiteam.qmui.widget.QMUIProgressBar$1
+com.qmuiteam.qmui.widget.QMUIProgressBar$2
+com.qmuiteam.qmui.widget.QMUIProgressBar$QMUIProgressBarTextGenerator
+com.qmuiteam.qmui.widget.QMUIRadiusImageView
+com.qmuiteam.qmui.widget.QMUITabSegment:
+    private static final java.lang.String TAG
+    public static final int MODE_SCROLLABLE
+    public static final int MODE_FIXED
+    public static final int ICON_POSITION_LEFT
+    public static final int ICON_POSITION_TOP
+    public static final int ICON_POSITION_RIGHT
+    public static final int ICON_POSITION_BOTTOM
+    private static final int NO_POSITION
+    232:233:public QMUITabSegment(android.content.Context)
+    237:239:public QMUITabSegment(android.content.Context,boolean)
+    433:434:public void clearOnTabSelectedListeners()
+    558:559:public void selectTab(int)
+    785:791:public void updateTabText(int,java.lang.String)
+    801:805:public void replaceTab(int,com.qmuiteam.qmui.widget.QMUITabSegment$Tab)
+    924:924:public com.qmuiteam.qmui.widget.QMUITabSegment$Tab getTab(int)
+    934:937:public void showSignCountView(android.content.Context,int,int)
+    943:945:public void hideSignCountView(int)
+    951:952:public int getSignCount(int)
+com.qmuiteam.qmui.widget.QMUITabSegment$IconPosition
+com.qmuiteam.qmui.widget.QMUITabSegment$Mode
+com.qmuiteam.qmui.widget.QMUITabSegment$Tab:
+    public static final int USE_TAB_SEGMENT
+    private android.widget.TextView mSignCountTextView
+    1106:1107:public QMUITabSegment$Tab(android.graphics.drawable.Drawable,android.graphics.drawable.Drawable,java.lang.CharSequence,boolean)
+    1080:1132:public QMUITabSegment$Tab(android.graphics.drawable.Drawable,android.graphics.drawable.Drawable,java.lang.CharSequence,boolean,boolean)
+    1140:1141:public void setmSignCountDigits(int)
+    1144:1146:public void setTextColor(int,int)
+    1153:1154:public void setTextSize(int)
+    1161:1162:public void setText(java.lang.CharSequence)
+    1185:1186:public void setIconPosition(int)
+    1193:1194:public void setGravity(int)
+    1217:1224:public void addCustomView(android.view.View)
+    1237:1243:public void setSignCountMargin(int,int)
+    1246:1256:private android.widget.TextView ensureSignCountView(android.content.Context)
+    1265:1283:public void showSignCountView(android.content.Context,int)
+    1289:1292:public void hideSignCountView()
+    1298:1304:public int getSignCount()
+    1309:1309:private android.widget.RelativeLayout$LayoutParams getDefaultCustomLayoutParam()
+    1313:1321:private java.lang.String getNumberDigitsFormattingValue(int)
+com.qmuiteam.qmui.widget.QMUITopBar:
+    private static final int DEFAULT_VIEW_ID
+    108:109:public QMUITopBar(android.content.Context)
+    91:125:QMUITopBar(android.content.Context,boolean)
+    205:205:public android.widget.TextView setTitle(int)
+    232:239:public android.widget.TextView setEmojiTitle(java.lang.String)
+    243:246:public void showTitleView(boolean)
+    392:400:public void addLeftView(android.view.View,int)
+    410:420:public void addLeftView(android.view.View,int,android.widget.RelativeLayout$LayoutParams)
+    429:437:public void addRightView(android.view.View,int)
+    463:465:public android.widget.RelativeLayout$LayoutParams generateTopBarImageButtonLayoutParams()
+    476:478:public com.qmuiteam.qmui.alpha.QMUIAlphaImageButton addRightImageButton(int,int)
+    489:491:public com.qmuiteam.qmui.alpha.QMUIAlphaImageButton addLeftImageButton(int,int)
+    511:511:public android.widget.Button addLeftTextButton(int,int)
+    522:524:public android.widget.Button addLeftTextButton(java.lang.String,int)
+    578:581:private com.qmuiteam.qmui.alpha.QMUIAlphaImageButton generateTopBarImageButton(int)
+    590:590:public com.qmuiteam.qmui.alpha.QMUIAlphaImageButton addLeftBackImageButton()
+    597:602:public void removeAllLeftViews()
+    608:613:public void removeAllRightViews()
+    619:632:public void removeCenterViewAndTitleView()
+    660:664:public int computeAndSetBackgroundAlpha(int,int,int)
+com.qmuiteam.qmui.widget.QMUITopBarLayout
+com.qmuiteam.qmui.widget.QMUIVerticalTextView
+com.qmuiteam.qmui.widget.QMUIViewPager
+com.qmuiteam.qmui.widget.QMUIViewPager$WrapperPagerAdapter
+com.qmuiteam.qmui.widget.QMUIWindowInsetLayout:
+    44:45:public QMUIWindowInsetLayout(android.content.Context)
+com.qmuiteam.qmui.widget.QMUIWrapContentListView
+com.qmuiteam.qmui.widget.QMUIWrapContentScrollView:
+    30:39:public QMUIWrapContentScrollView(android.content.Context,int)
+    30:43:public QMUIWrapContentScrollView(android.content.Context,android.util.AttributeSet)
+    30:47:public QMUIWrapContentScrollView(android.content.Context,android.util.AttributeSet,int)
+com.qmuiteam.qmui.widget.dialog.QMUIBottomSheet:
+    private static final java.lang.String TAG
+    private static final int mAnimationDuration
+    120:120:public android.view.View getContentView()
+com.qmuiteam.qmui.widget.dialog.QMUIBottomSheet$BottomGridSheetBuilder
+com.qmuiteam.qmui.widget.dialog.QMUIBottomSheet$BottomGridSheetBuilder$1
+com.qmuiteam.qmui.widget.dialog.QMUIBottomSheet$BottomGridSheetBuilder$OnSheetItemClickListener
+com.qmuiteam.qmui.widget.dialog.QMUIBottomSheet$BottomGridSheetBuilder$Style
+com.qmuiteam.qmui.widget.dialog.QMUIBottomSheet$BottomListSheetBuilder:
+    279:280:public com.qmuiteam.qmui.widget.dialog.QMUIBottomSheet$BottomListSheetBuilder addItem(android.graphics.drawable.Drawable,java.lang.String)
+    288:289:public com.qmuiteam.qmui.widget.dialog.QMUIBottomSheet$BottomListSheetBuilder addItem(java.lang.String,java.lang.String)
+    298:300:public com.qmuiteam.qmui.widget.dialog.QMUIBottomSheet$BottomListSheetBuilder addItem(int,java.lang.String,java.lang.String)
+    310:312:public com.qmuiteam.qmui.widget.dialog.QMUIBottomSheet$BottomListSheetBuilder addItem(int,java.lang.String,java.lang.String,boolean)
+    323:325:public com.qmuiteam.qmui.widget.dialog.QMUIBottomSheet$BottomListSheetBuilder addItem(int,java.lang.String,java.lang.String,boolean,boolean)
+    334:335:public com.qmuiteam.qmui.widget.dialog.QMUIBottomSheet$BottomListSheetBuilder setOnBottomDialogDismissListener(android.content.DialogInterface$OnDismissListener)
+    339:342:public com.qmuiteam.qmui.widget.dialog.QMUIBottomSheet$BottomListSheetBuilder addHeaderView(android.view.View)
+    346:347:public com.qmuiteam.qmui.widget.dialog.QMUIBottomSheet$BottomListSheetBuilder setTitle(java.lang.String)
+    351:352:public com.qmuiteam.qmui.widget.dialog.QMUIBottomSheet$BottomListSheetBuilder setTitle(int)
+    421:428:public void notifyDataSetChanged()
+com.qmuiteam.qmui.widget.dialog.QMUIBottomSheet$BottomListSheetBuilder$BottomSheetListItemData:
+    440:455:public QMUIBottomSheet$BottomListSheetBuilder$BottomSheetListItemData(android.graphics.drawable.Drawable,java.lang.String,java.lang.String)
+    440:462:public QMUIBottomSheet$BottomListSheetBuilder$BottomSheetListItemData(android.graphics.drawable.Drawable,java.lang.String,java.lang.String,boolean)
+    440:470:public QMUIBottomSheet$BottomListSheetBuilder$BottomSheetListItemData(android.graphics.drawable.Drawable,java.lang.String,java.lang.String,boolean,boolean)
+com.qmuiteam.qmui.widget.dialog.QMUIBottomSheetItemView:
+    43:44:public QMUIBottomSheetItemView(android.content.Context)
+    51:52:public QMUIBottomSheetItemView(android.content.Context,android.util.AttributeSet,int)
+com.qmuiteam.qmui.widget.dialog.QMUIDialog:
+    72:73:public QMUIDialog(android.content.Context)
+    142:160:public void showWithImmersiveCheck(android.app.Activity)
+    163:169:public void showWithImmersiveCheck()
+com.qmuiteam.qmui.widget.dialog.QMUIDialog$AutoResizeDialogBuilder
+com.qmuiteam.qmui.widget.dialog.QMUIDialog$AutoResizeDialogBuilder$1
+com.qmuiteam.qmui.widget.dialog.QMUIDialog$AutoResizeDialogBuilder$2
+com.qmuiteam.qmui.widget.dialog.QMUIDialog$AutoResizeDialogBuilder$3
+com.qmuiteam.qmui.widget.dialog.QMUIDialog$CheckBoxMessageDialogBuilder
+com.qmuiteam.qmui.widget.dialog.QMUIDialog$CheckBoxMessageDialogBuilder$1
+com.qmuiteam.qmui.widget.dialog.QMUIDialog$CheckableDialogBuilder
+com.qmuiteam.qmui.widget.dialog.QMUIDialog$CheckableDialogBuilder$1
+com.qmuiteam.qmui.widget.dialog.QMUIDialog$CustomDialogBuilder
+com.qmuiteam.qmui.widget.dialog.QMUIDialog$EditTextDialogBuilder
+com.qmuiteam.qmui.widget.dialog.QMUIDialog$EditTextDialogBuilder$1
+com.qmuiteam.qmui.widget.dialog.QMUIDialog$EditTextDialogBuilder$2
+com.qmuiteam.qmui.widget.dialog.QMUIDialog$MenuBaseDialogBuilder
+com.qmuiteam.qmui.widget.dialog.QMUIDialog$MenuBaseDialogBuilder$1
+com.qmuiteam.qmui.widget.dialog.QMUIDialog$MenuBaseDialogBuilder$2
+com.qmuiteam.qmui.widget.dialog.QMUIDialog$MenuBaseDialogBuilder$3
+com.qmuiteam.qmui.widget.dialog.QMUIDialog$MenuBaseDialogBuilder$3$1
+com.qmuiteam.qmui.widget.dialog.QMUIDialog$MenuBaseDialogBuilder$ItemViewFactory
+com.qmuiteam.qmui.widget.dialog.QMUIDialog$MenuDialogBuilder
+com.qmuiteam.qmui.widget.dialog.QMUIDialog$MenuDialogBuilder$1
+com.qmuiteam.qmui.widget.dialog.QMUIDialog$MessageDialogBuilder:
+    200:200:public com.qmuiteam.qmui.widget.dialog.QMUIDialog$MessageDialogBuilder setMessage(int)
+    243:243:public com.qmuiteam.qmui.widget.textview.QMUISpanTouchFixTextView getTextView()
+com.qmuiteam.qmui.widget.dialog.QMUIDialog$MultiCheckableDialogBuilder
+com.qmuiteam.qmui.widget.dialog.QMUIDialog$MultiCheckableDialogBuilder$1
+com.qmuiteam.qmui.widget.dialog.QMUIDialogAction:
+    public static final int ACTION_PROP_POSITIVE
+    public static final int ACTION_PROP_NEUTRAL
+    public static final int ACTION_PROP_NEGATIVE
+    71:72:public QMUIDialogAction(android.content.Context,int,com.qmuiteam.qmui.widget.dialog.QMUIDialogAction$ActionListener)
+    75:76:public QMUIDialogAction(android.content.Context,java.lang.String,com.qmuiteam.qmui.widget.dialog.QMUIDialogAction$ActionListener)
+    59:90:public QMUIDialogAction(android.content.Context,int,int,com.qmuiteam.qmui.widget.dialog.QMUIDialogAction$ActionListener)
+    59:97:public QMUIDialogAction(android.content.Context,java.lang.CharSequence,int,com.qmuiteam.qmui.widget.dialog.QMUIDialogAction$ActionListener)
+    111:112:public void setOnClickListener(com.qmuiteam.qmui.widget.dialog.QMUIDialogAction$ActionListener)
+    115:119:public void setEnabled(boolean)
+    197:197:public int getActionProp()
+com.qmuiteam.qmui.widget.dialog.QMUIDialogAction$Prop
+com.qmuiteam.qmui.widget.dialog.QMUIDialogBlockBuilder
+com.qmuiteam.qmui.widget.dialog.QMUIDialogBuilder:
+    public static final int HORIZONTAL
+    public static final int VERTICAL
+    75:76:public static void setOnProvideDefaultTheme(com.qmuiteam.qmui.widget.dialog.QMUIDialogBuilder$OnProvideDefaultTheme)
+    115:115:public android.content.Context getBaseContext()
+    124:125:public com.qmuiteam.qmui.widget.dialog.QMUIDialogBuilder setContentAreaMaxHeight(int)
+    143:143:public com.qmuiteam.qmui.widget.dialog.QMUIDialogBuilder setTitle(int)
+    148:149:public com.qmuiteam.qmui.widget.dialog.QMUIDialogBuilder setCancelable(boolean)
+    154:155:public com.qmuiteam.qmui.widget.dialog.QMUIDialogBuilder setCanceledOnTouchOutside(boolean)
+    160:161:public com.qmuiteam.qmui.widget.dialog.QMUIDialogBuilder setOnDecorationListener(com.qmuiteam.qmui.widget.dialog.QMUIDialogView$OnDecorationListener)
+    166:167:public com.qmuiteam.qmui.widget.dialog.QMUIDialogBuilder setActionContainerOrientation(int)
+    172:173:public com.qmuiteam.qmui.widget.dialog.QMUIDialogBuilder setChangeAlphaForPressOrDisable(boolean)
+    178:182:public com.qmuiteam.qmui.widget.dialog.QMUIDialogBuilder setActionDivider(int,int,int,int)
+    193:197:public com.qmuiteam.qmui.widget.dialog.QMUIDialogBuilder addAction(com.qmuiteam.qmui.widget.dialog.QMUIDialogAction)
+    207:207:public com.qmuiteam.qmui.widget.dialog.QMUIDialogBuilder addAction(int,com.qmuiteam.qmui.widget.dialog.QMUIDialogAction$ActionListener)
+    229:229:public com.qmuiteam.qmui.widget.dialog.QMUIDialogBuilder addAction(int,int,com.qmuiteam.qmui.widget.dialog.QMUIDialogAction$ActionListener)
+    240:240:public com.qmuiteam.qmui.widget.dialog.QMUIDialogBuilder addAction(int,java.lang.CharSequence,com.qmuiteam.qmui.widget.dialog.QMUIDialogAction$ActionListener)
+    253:253:public com.qmuiteam.qmui.widget.dialog.QMUIDialogBuilder addAction(int,int,int,com.qmuiteam.qmui.widget.dialog.QMUIDialogAction$ActionListener)
+    363:363:public android.widget.TextView getTitleView()
+    501:501:public android.view.View getAnchorTopView()
+    505:505:public android.view.View getAnchorBottomView()
+    509:515:public java.util.List getPositiveAction()
+com.qmuiteam.qmui.widget.dialog.QMUIDialogBuilder$Orientation
+com.qmuiteam.qmui.widget.dialog.QMUIDialogMenuItemView
+com.qmuiteam.qmui.widget.dialog.QMUIDialogMenuItemView$CheckItemView
+com.qmuiteam.qmui.widget.dialog.QMUIDialogMenuItemView$MarkItemView
+com.qmuiteam.qmui.widget.dialog.QMUIDialogMenuItemView$MenuItemViewListener
+com.qmuiteam.qmui.widget.dialog.QMUIDialogMenuItemView$TextItemView
+com.qmuiteam.qmui.widget.dialog.QMUIDialogView:
+    40:41:public QMUIDialogView(android.content.Context)
+com.qmuiteam.qmui.widget.dialog.QMUITipDialog
+com.qmuiteam.qmui.widget.dialog.QMUITipDialog$Builder
+com.qmuiteam.qmui.widget.dialog.QMUITipDialog$Builder$IconType
+com.qmuiteam.qmui.widget.dialog.QMUITipDialog$CustomBuilder
+com.qmuiteam.qmui.widget.grouplist.QMUICommonListItemView
+com.qmuiteam.qmui.widget.grouplist.QMUICommonListItemView$LayoutParamConfig
+com.qmuiteam.qmui.widget.grouplist.QMUICommonListItemView$QMUICommonListItemAccessoryType
+com.qmuiteam.qmui.widget.grouplist.QMUICommonListItemView$QMUICommonListItemOrientation
+com.qmuiteam.qmui.widget.grouplist.QMUICommonListItemView$QMUICommonListItemRedDotPosition
+com.qmuiteam.qmui.widget.grouplist.QMUIGroupListSectionHeaderFooterView
+com.qmuiteam.qmui.widget.grouplist.QMUIGroupListView
+com.qmuiteam.qmui.widget.grouplist.QMUIGroupListView$Section
+com.qmuiteam.qmui.widget.grouplist.QMUIGroupListView$Section$1
+com.qmuiteam.qmui.widget.grouplist.QMUIGroupListView$Section$2
+com.qmuiteam.qmui.widget.grouplist.QMUIGroupListView$SeparatorStyle
+com.qmuiteam.qmui.widget.popup.QMUIBasePopup
+com.qmuiteam.qmui.widget.popup.QMUIBasePopup$1
+com.qmuiteam.qmui.widget.popup.QMUIBasePopup$2
+com.qmuiteam.qmui.widget.popup.QMUIBasePopup$3
+com.qmuiteam.qmui.widget.popup.QMUIBasePopup$RootView
+com.qmuiteam.qmui.widget.popup.QMUIListPopup
+com.qmuiteam.qmui.widget.popup.QMUIPopup
+com.qmuiteam.qmui.widget.popup.QMUIPopup$Direction
+com.qmuiteam.qmui.widget.pullRefreshLayout.QMUICenterGravityRefreshOffsetCalculator
+com.qmuiteam.qmui.widget.pullRefreshLayout.QMUIDefaultRefreshOffsetCalculator
+com.qmuiteam.qmui.widget.pullRefreshLayout.QMUIFollowRefreshOffsetCalculator
+com.qmuiteam.qmui.widget.pullRefreshLayout.QMUIPullRefreshLayout
+com.qmuiteam.qmui.widget.pullRefreshLayout.QMUIPullRefreshLayout$IRefreshView
+com.qmuiteam.qmui.widget.pullRefreshLayout.QMUIPullRefreshLayout$OnChildScrollUpCallback
+com.qmuiteam.qmui.widget.pullRefreshLayout.QMUIPullRefreshLayout$OnPullListener
+com.qmuiteam.qmui.widget.pullRefreshLayout.QMUIPullRefreshLayout$RefreshOffsetCalculator
+com.qmuiteam.qmui.widget.pullRefreshLayout.QMUIPullRefreshLayout$RefreshView
+com.qmuiteam.qmui.widget.roundwidget.QMUIRoundButton:
+    50:52:public QMUIRoundButton(android.content.Context)
+    60:62:public QMUIRoundButton(android.content.Context,android.util.AttributeSet,int)
+com.qmuiteam.qmui.widget.roundwidget.QMUIRoundFrameLayout
+com.qmuiteam.qmui.widget.roundwidget.QMUIRoundLinearLayout
+com.qmuiteam.qmui.widget.roundwidget.QMUIRoundRelativeLayout
+com.qmuiteam.qmui.widget.section.QMUIDefaultStickySectionAdapter
+com.qmuiteam.qmui.widget.section.QMUISection
+com.qmuiteam.qmui.widget.section.QMUISection$Model
+com.qmuiteam.qmui.widget.section.QMUISectionDiffCallback
+com.qmuiteam.qmui.widget.section.QMUISectionDiffCallback$1
+com.qmuiteam.qmui.widget.section.QMUISectionDiffCallback$IndexGenerationInfo
+com.qmuiteam.qmui.widget.section.QMUIStickySectionAdapter
+com.qmuiteam.qmui.widget.section.QMUIStickySectionAdapter$1
+com.qmuiteam.qmui.widget.section.QMUIStickySectionAdapter$2
+com.qmuiteam.qmui.widget.section.QMUIStickySectionAdapter$Callback
+com.qmuiteam.qmui.widget.section.QMUIStickySectionAdapter$PositionFinder
+com.qmuiteam.qmui.widget.section.QMUIStickySectionAdapter$ViewCallback
+com.qmuiteam.qmui.widget.section.QMUIStickySectionAdapter$ViewHolder
+com.qmuiteam.qmui.widget.section.QMUIStickySectionItemDecoration
+com.qmuiteam.qmui.widget.section.QMUIStickySectionItemDecoration$1
+com.qmuiteam.qmui.widget.section.QMUIStickySectionItemDecoration$Callback
+com.qmuiteam.qmui.widget.section.QMUIStickySectionLayout
+com.qmuiteam.qmui.widget.section.QMUIStickySectionLayout$1
+com.qmuiteam.qmui.widget.section.QMUIStickySectionLayout$2
+com.qmuiteam.qmui.widget.section.QMUIStickySectionLayout$3
+com.qmuiteam.qmui.widget.section.QMUIStickySectionLayout$StickySectionWrapViewConfig
+com.qmuiteam.qmui.widget.textview.QMUILinkTextView
+com.qmuiteam.qmui.widget.textview.QMUILinkTextView$1
+com.qmuiteam.qmui.widget.textview.QMUILinkTextView$OnLinkClickListener
+com.qmuiteam.qmui.widget.textview.QMUILinkTextView$OnLinkLongClickListener
+com.qmuiteam.qmui.widget.webview.QMUIWebView
+com.qmuiteam.qmui.widget.webview.QMUIWebView$Callback
+com.qmuiteam.qmui.widget.webview.QMUIWebView$OnScrollChangeListener
+com.qmuiteam.qmui.widget.webview.QMUIWebViewClient
+com.qmuiteam.qmui.widget.webview.QMUIWebViewClient$1
+com.qmuiteam.qmui.widget.webview.QMUIWebViewClient$2
+com.qmuiteam.qmui.widget.webview.QMUIWebViewClient$3
+com.qmuiteam.qmui.widget.webview.QMUIWebViewContainer
+com.qmuiteam.qmui.widget.webview.QMUIWebViewContainer$1
+com.qmuiteam.qmui.widget.webview.QMUIWebViewContainer$2
+com.silvia.controlbox.BuildConfig
+com.silvia.controlbox.MainActivity:
+    private static final java.lang.String ACTION_USB_PERMISSION
+    private static final int REQUEST_EXTERNAL_STORAGE
+    724:734:public static void testMenciErrorDialog()
+    797:808:public static void testMenci2SuccessDialog(java.lang.String)
+    814:832:public static void testMenci2Dialog(java.lang.String)
+    867:918:public void Printerstatus()
+    1221:1222:public static void testADC()
+    1228:1229:public static void testMenci()
+    1239:1240:public static void testJavaCrash()
+com.silvia.controlbox.MainActivity$12
+com.silvia.controlbox.MainActivity$13
+com.silvia.controlbox.MainActivity$14
+com.silvia.controlbox.MainActivity$7
+com.silvia.controlbox.R
+com.silvia.controlbox.R$anim
+com.silvia.controlbox.R$attr
+com.silvia.controlbox.R$bool
+com.silvia.controlbox.R$color
+com.silvia.controlbox.R$dimen
+com.silvia.controlbox.R$drawable
+com.silvia.controlbox.R$id
+com.silvia.controlbox.R$integer
+com.silvia.controlbox.R$layout
+com.silvia.controlbox.R$mipmap
+com.silvia.controlbox.R$string
+com.silvia.controlbox.R$style
+com.silvia.controlbox.R$styleable
+com.silvia.controlbox.R$xml
+com.silvia.controlbox.activity.BaseActivity
+com.silvia.controlbox.fragment.PcbaTestFragment:
+    private com.qmuiteam.qmui.widget.QMUIFloatLayout mFloatLayout
+com.silvia.controlbox.ui.BottomBar:
+    79:80:public com.silvia.controlbox.ui.BottomBar setTitleSize(int)
+    84:85:public com.silvia.controlbox.ui.BottomBar setIconWidth(int)
+    89:90:public com.silvia.controlbox.ui.BottomBar setTitleIconMargin(int)
+    94:95:public com.silvia.controlbox.ui.BottomBar setIconHeight(int)
+    99:103:public com.silvia.controlbox.ui.BottomBar addItem(java.lang.Class,java.lang.String,int,int)
+    119:120:public com.silvia.controlbox.ui.BottomBar setFirstChecked(int)
+    125:151:public void build()
+    183:184:private android.graphics.Bitmap getBitmap(int)
+com.silvia.controlbox.utils.AppUtils:
+    21:21:private AppUtils()
+    30:41:public static void setWindowStatusBarColor(android.app.Activity,int)
+    50:61:public static void setWindowStatusBarColor(android.app.Dialog,int)
+    96:103:public static int getVersionCode(android.content.Context)
+    112:120:public static java.util.List getInstalledPackages(android.content.Context)
+    130:137:public static android.graphics.drawable.Drawable getApplicationIcon(android.content.Context)
+    146:150:public static void installApk(android.app.Activity,java.lang.String)
+com.silvia.controlbox.utils.BitmapUtil:
+    private static final float SMALL_TEXT
+    private static final float LARGE_TEXT
+    private static final int START_LEFT
+    public static final int IS_LARGE
+    public static final int IS_SMALL
+    public static final int IS_RIGHT
+    public static final int IS_LEFT
+    public static final int IS_CENTER
+    40:40:public BitmapUtil()
+    161:175:public static android.graphics.Bitmap BitmapMerge(android.graphics.Bitmap,android.graphics.Bitmap)
+    184:259:public static void saveBmp(android.graphics.Bitmap)
+    269:285:public static android.graphics.Bitmap compressImage(android.graphics.Bitmap)
+    354:358:public static void writeWord(java.io.FileOutputStream,int)
+    361:367:public static void writeDword(java.io.FileOutputStream,long)
+    370:376:public static void writeLong(java.io.FileOutputStream,long)
+    383:396:public static android.graphics.Bitmap addBitmapInFoot(android.graphics.Bitmap,android.graphics.Bitmap)
+    420:431:public static android.graphics.Bitmap bitmap2Gray(android.graphics.Bitmap)
+    435:470:public static byte[] getPixels(android.graphics.Bitmap)
+    474:496:public static android.graphics.Bitmap gray(android.graphics.Bitmap,int)
+    507:520:private void getPicturePixel(android.graphics.Bitmap)
+    529:531:public static byte[] getBytesByBitmap(android.graphics.Bitmap)
+com.silvia.controlbox.utils.Common:
+    public static final int SetDevID
+    public static final int WriteIp
+    public static final int WritePort
+    public static final int WriteWorkT
+    public static final int WriteCollT
+    public static final int WriteReportT
+    public static final int WriteInstall
+    public static final int GetDevID
+    public static final int GetImei
+    public static final int GetNID
+    public static final int GetBleMac
+    public static final int DEVICE_ID
+    public static final java.lang.String ON
+    public static final java.lang.String OFF
+    7:7:public Common()
+com.silvia.controlbox.utils.CountDownTimerUtils
+com.silvia.controlbox.utils.DensityHelper
+com.silvia.controlbox.utils.DensityHelper$1
+com.silvia.controlbox.utils.FileUtils:
+    18:18:public FileUtils()
+    27:52:public static boolean copyFile(java.lang.String,java.lang.String)
+    57:73:private void removeFile(java.io.File)
+    83:117:public void copyFolder(java.lang.String,java.lang.String)
+com.silvia.controlbox.utils.KeyBoxUtil
+com.silvia.controlbox.utils.LabelUtils
+com.silvia.controlbox.utils.LabelUtils$ENABLE
+com.silvia.controlbox.utils.ModBus
+com.silvia.controlbox.utils.MyAccessibilityService
+com.silvia.controlbox.utils.MyDialog:
+    203:204:public void DissmissDialog(android.content.Context)
+    207:208:public void cancelDialog()
+com.silvia.controlbox.utils.PrintUtil
+com.silvia.controlbox.utils.PrinterStatus
+com.silvia.controlbox.utils.Result
+com.silvia.controlbox.utils.ScanGunKeyEventHelper:
+    private static final long MESSAGE_DELAY
+com.silvia.controlbox.utils.SpUtil:
+    10:10:public SpUtil()
+    20:24:public static void saveBoolean(android.content.Context,java.lang.String,boolean)
+    29:43:public static boolean saveArray(android.content.Context,java.lang.String,java.util.List)
+    48:58:public static java.util.ArrayList deleteArray(android.content.Context,java.lang.String)
+    62:71:public static java.util.ArrayList readArray(android.content.Context,java.lang.String)
+    77:86:public static java.util.ArrayList getArray(android.content.Context,java.lang.String)
+    93:96:public static boolean getBoolean(android.content.Context,java.lang.String,boolean)
+com.silvia.controlbox.utils.SpWrapper:
+    6:6:public SpWrapper()
+    136:136:public static java.lang.String getDev(android.content.Context,java.lang.String)
+com.silvia.controlbox.utils.StringBitmapParameter:
+    48:49:public void setText(java.lang.String)
+    56:57:public void setIsRightOrLeft(int)
+    64:65:public void setIsSmallOrLarge(int)
+com.silvia.controlbox.utils.Test
+com.silvia.controlbox.utils.ToastUtil:
+    31:38:public static void showLongToast(java.lang.String)
+    42:49:public static void showShortToast(int)
+    52:59:public static void showLongToast(int)
+    63:66:public void cancelToast()
+com.silvia.controlbox.utils.UsbManagerUtils:
+    private static java.lang.String usbPath
+    private static java.lang.String result
+    20:21:public UsbManagerUtils(android.content.Context)
+    72:75:public static com.silvia.controlbox.utils.UsbManagerUtils getInstance(android.content.Context)
+    82:83:public static boolean isMounted()
+    92:112:public long getExternalStoreAvailableSize()
+com.silvia.controlbox.utils.UsbService:
+    public static final java.lang.String ACTION_USB_READY
+    public static final java.lang.String ACTION_USB_ATTACHED
+    public static final java.lang.String ACTION_USB_DETACHED
+    public static final java.lang.String ACTION_USB_NOT_SUPPORTED
+    public static final java.lang.String ACTION_NO_USB
+    public static final java.lang.String ACTION_USB_PERMISSION_GRANTED
+    public static final java.lang.String ACTION_USB_PERMISSION_NOT_GRANTED
+    public static final java.lang.String ACTION_USB_DISCONNECTED
+    public static final java.lang.String ACTION_CDC_DRIVER_NOT_WORKING
+    public static final java.lang.String ACTION_USB_DEVICE_NOT_WORKING
+    public static final java.lang.String ACTION_PLUGIN_PRINTER
+    public static final java.lang.String ACTION_PLUGIN_USB
+    public static final java.lang.String ACTION_PLUGIN_BAR_SCAN
+    public static final java.lang.String ACTION_PLUGIN_QR_SCAN
+    public static final java.lang.String ACTION_PLUGIN_SERIAL
+    public static final int MESSAGE_FROM_SERIAL_PORT
+    public static final int CTS_CHANGE
+    public static final int DSR_CHANGE
+    private static final java.lang.String ACTION_USB_PERMISSION
+    private static final int BAUD_RATE
+com.silvia.controlbox.utils.Util:
+    private static int itedbm
+    40:40:public Util()
+    52:60:public java.util.List search(java.lang.String,java.util.List)
+    86:156:public static java.util.ArrayList readBin(java.lang.String)
+    160:164:private boolean sort(java.lang.String,java.lang.String)
+    172:188:public static byte decodeBinaryString(java.lang.String)
+    195:200:public static byte[] getBooleanArray(byte)
+    207:207:public static java.lang.String byteToBit(byte)
+    231:232:public static int byte2int16(byte[])
+    242:243:public static int iSixteen2iTen(int)
+    253:255:public static int iTen2iSixteen(int)
+    278:293:public static byte[] ipToByteArray(java.lang.String)
+    302:316:public static byte[] macToByteArray(java.lang.String)
+    325:326:public static java.lang.String hexString2String(java.lang.String)
+    337:345:public static byte[] HexString2Bytes(java.lang.String)
+    352:366:public static byte[] hexString2Byte(java.lang.String)
+    377:383:public static byte[] fillupZero(byte[],int)
+    392:406:public static byte[] md5String2bytes(java.lang.String)
+    417:423:public static byte unionBytes(byte,byte)
+    427:435:public static java.lang.String Bytes2HexString_noblack(byte[])
+    442:446:public static java.lang.String decode(java.lang.String)
+    457:464:public static java.lang.String encode(java.lang.String)
+    473:476:public static byte[] getRandomByte(int)
+    486:523:public static byte[] getTimeHexString()
+    533:574:public static byte[] timeHexString(java.lang.String,java.lang.String)
+    585:591:public static java.lang.String string2HexString(java.lang.String)
+    599:605:public static java.lang.String bytes2NoBlankHexString(byte[])
+    610:610:public static boolean isOnMainThread()
+    623:659:public static java.lang.String getWeekByDateStr(java.lang.String)
+    669:671:public static java.lang.String getCurrentTime(java.lang.String)
+    760:760:public static java.util.Date getCurrentTime()
+    774:778:public static java.lang.String checkCalendar(int,int,int,int,int)
+    798:803:public static char[] getChars(byte[])
+    815:836:public static byte[] float2byte(float)
+    847:857:public static byte[] stringToAsciiByte(java.lang.String)
+    868:871:public static byte[] charToByte(char)
+    880:885:public static byte[] getBytes(char[])
+    900:901:public static byte charToByteAscii(char)
+    915:932:public static boolean isEffectiveDate(java.util.Date,java.util.Date,java.util.Date)
+    942:950:public static void closeStream(java.io.Closeable)
+    957:961:public static void interruptThread(java.lang.Thread)
+    970:976:public static byte[] intToByteArray(int)
+    980:994:public static byte[] String2Bytes(java.lang.String)
+    1004:1009:public static byte[] IntToByte(int)
+    1020:1026:public static int byteArrayToInt(byte[])
+    1035:1057:public static boolean RequestRootPermission(java.lang.String)
+    1061:1071:public static boolean is_root()
+    1080:1091:public static java.lang.String parseSuffix(java.lang.String)
+    1224:1230:public static void queryIp(com.silvia.controlbox.utils.UsbService)
+    1238:1244:public static void queryPort(com.silvia.controlbox.utils.UsbService)
+    1266:1272:public static void queryWorkTime(com.silvia.controlbox.utils.UsbService)
+    1280:1286:public static void queryCollT(com.silvia.controlbox.utils.UsbService)
+    1294:1300:public static void queryUpt(com.silvia.controlbox.utils.UsbService)
+    1336:1342:public static void queryFrequency(com.silvia.controlbox.utils.UsbService)
+    1350:1356:public static void queryInstall(com.silvia.controlbox.utils.UsbService)
+    1364:1370:public static void testSensor(com.silvia.controlbox.utils.UsbService)
+    1407:1413:public static void testOpen(com.silvia.controlbox.utils.UsbService)
+    1435:1440:public static java.lang.String inputStream2String(java.io.InputStream)
+    1461:1467:public static void GetCodeString(java.lang.String)
+    1475:1477:public static java.lang.String getIMEI(android.content.Context)
+    1510:1518:public static boolean getMenciParam(java.lang.String)

@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/qmui_config_color_white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        style="@style/textColorDefault"
+        android:layout_marginTop="5dp"
+        android:id="@+id/textView11"
+        android:inputType="number|numberDecimal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/host_ip" />
+
+    <EditText
+        style="@style/textColorDefault"
+        android:id="@+id/edit_host_ip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <TextView
+        style="@style/textColorDefault"
+        android:id="@+id/textView12"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/host_port" />
+
+    <EditText
+        style="@style/textColorDefault"
+        android:id="@+id/edit_host_port"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number" />
+
+    <TextView
+        style="@style/textColorDefault"
+        android:id="@+id/textView13"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/device_work_time" />
+
+    <EditText
+        style="@style/textColorDefault"
+        android:id="@+id/edit_work_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number" />
+
+    <TextView
+        style="@style/textColorDefault"
+        android:id="@+id/textView14"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/device_timing_acquisition" />
+
+    <EditText
+        style="@style/textColorDefault"
+        android:id="@+id/edit_timing_acquisition"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number" />
+
+    <TextView
+        style="@style/textColorDefault"
+        android:id="@+id/textView15"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/device_timing_report" />
+
+    <EditText
+        style="@style/textColorDefault"
+        android:id="@+id/edit_timing_report"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number" />
+
+    <TextView
+        style="@style/textColorDefault"
+        android:id="@+id/textView16"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/device_install_method" />
+
+    <EditText
+        style="@style/textColorDefault"
+        android:id="@+id/edit_install_method"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number" />
+    <TextView
+        style="@style/textColorDefault"
+        android:text="@string/tips"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <Button
+        android:layout_marginTop="10dp"
+        style="@style/button_style"
+        android:id="@+id/button_save_param"
+        android:text="@string/save_param"
+        android:textColor="@color/colorPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+
+</LinearLayout>

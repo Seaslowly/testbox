@@ -1,0 +1,190 @@
+package stringtech.schoollock.main;
+
+import android.Manifest;
+import android.app.FragmentManager;
+import android.content.DialogInterface;
+import android.content.Intent;
+import android.os.Build;
+import android.support.v4.content.ContextCompat;
+import android.support.v4.widget.DrawerLayout;
+import android.support.v7.app.AlertDialog;
+import android.support.v7.app.AppCompatActivity;
+import android.os.Bundle;
+import android.view.View;
+import android.widget.ArrayAdapter;
+import android.widget.ImageButton;
+import android.widget.LinearLayout;
+import android.widget.ListView;
+import android.widget.RelativeLayout;
+import android.widget.TextView;
+import android.widget.Toast;
+
+import com.alexlib.permissions.AfterPermissionGranted;
+import com.alexlib.permissions.EasyPermissions;
+import com.alexlib.util.AppUtils;
+import com.alexlib.util.L;
+import com.alexlib.util.T;
+import com.alexlib.zxing.CodeUtils;
+import com.inuker.bluetooth.library.beacon.Beacon;
+import com.inuker.bluetooth.library.search.SearchRequest;
+import com.inuker.bluetooth.library.search.SearchResult;
+import com.inuker.bluetooth.library.search.response.SearchResponse;
+
+import java.io.IOException;
+
+import stringtech.schoollock.BaseApplication;
+import stringtech.schoollock.R;
+import stringtech.schoollock.correct.CorrectpwdActivity;
+import stringtech.schoollock.db.SharedPreferencesHelper;
+import stringtech.schoollock.excute.ExcuteActivity;
+import stringtech.schoollock.kit.ClientManager;
+import stringtech.schoollock.login.LoginActivity;
+import stringtech.schoollock.task.TaskActivity;
+import stringtech.schoollock.util.ByteUtil;
+import stringtech.schoollock.util.FileUtil;
+import stringtech.schoollock.util.RequestPermsUtil;
+import stringtech.schoollock.view.CustomDialog;
+
+public class MainActivity extends AppCompatActivity implements DrawerLayout.DrawerListener, View.OnClickListener {
+
+
+    private int loginTypeID;
+    private DrawerLayout mDrawer;
+    private RelativeLayout drawerRl;
+    private LinearLayout menuLl;
+    private TextView nameTv, versionTv, correctTv, returnTv, titleTv, pinTv;
+    private AdminFragment mAdminFragment;
+    private StudentFragment mStudentFragment;
+    SearchRequest request = new SearchRequest.Builder()
+            .searchBluetoothLeDevice(5000, 5)
+            .build();
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+
+        loginTypeID = Integer.parseInt(SharedPreferencesHelper.get(BaseApplication.USER_TYPE, 0) + "");
+        findView();
+
+        Bundle args = new Bundle();
+        FragmentManager fm = getFragmentManager();
+        if (loginTypeID == 0) {
+            titleTv.setText(getResources().getString(R.string.main_title_admin));
+            mAdminFragment = new AdminFragment();
+            args.putString("text", "admin");
+            mAdminFragment.setArguments(args);
+            fm.beginTransaction().replace(R.id.main_framelayout, mAdminFragment)
+                    .commit();
+            menuLl.setVisibility(View.VISIBLE);
+        } else {
+            titleTv.setText(getResources().getString(R.string.main_title_student));
+            mStudentFragment = new StudentFragment();
+            args.putString("text", "student");
+            mStudentFragment.setArguments(args);
+            fm.beginTransaction().replace(R.id.main_framelayout, mStudentFragment)
+                    .commit();
+            menuLl.setVisibility(View.GONE);
+        }
+
+        mDrawer = (DrawerLayout) findViewById(R.id.main_drawerlayout);
+        drawerRl = (RelativeLayout) findViewById(R.id.main_rl_left);
+
+        mDrawer.addDrawerListener(this);
+
+    }
+
+    private void findView() {
+        nameTv = (TextView) findViewById(R.id.main_dl_tv_name);
+        versionTv = (TextView) findViewById(R.id.main_dl_tv_version);
+        correctTv = (TextView) findViewById(R.id.main_dl_tv_correct);
+        returnTv = (TextView) findViewById(R.id.main_dl_tv_return);
+        titleTv = (TextView) findViewById(R.id.title_tv_name);
+        pinTv = (TextView) findViewById(R.id.main_dl_tv_pin);
+        menuLl = (LinearLayout) findViewById(R.id.main_dl_ll_menu);
+
+        correctTv.setOnClickListener(this);
+        returnTv.setOnClickListener(this);
+        pinTv.setOnClickListener(this);
+        ImageButton leftBtn = (ImageButton) findViewById(R.id.title_ib_left);
+        leftBtn.setImageDrawable(ContextCompat.getDrawable(this, R.mipmap.title_user));
+        leftBtn.setOnClickListener(this);
+
+        nameTv.setText(SharedPreferencesHelper.get(BaseApplication.USER_NAME, "").toString());
+        versionTv.setText(AppUtils.getVersionName(this));
+    }
+
+    private void createDirs() {
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+            requestLocation();
+            requestExternalStorage();
+        }
+        try {
+            FileUtil.createSDDir();
+            String path = FileUtil.SDPATH;
+            String modelFilePath = "flat.cyacd";
+            FileUtil.Assets2Sd(this, modelFilePath, path + "/" + modelFilePath);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        createDirs();
+        if (ClientManager.getClient().isBluetoothOpened()) {
+            ClientManager.getClient().search(request, new SearchResponse() {
+                @Override
+                public void onSearchStarted() {
+
+                }
+
+                @Override
+                public void onDeviceFounded(SearchResult device) {
+                    Beacon beacon = new Beacon(device.scanRecord);
+//                    Log.i(BaseApplication.TAG, device.getAddress());
+                }
+
+                @Override
+                public void onSearchStopped() {
+
+                }
+
+                @Override
+                public void onSearchCanceled() {
+
+                }
+            });
+        } else {
+            ClientManager.getClient().openBluetooth();
+        }
+    }
+
+    @Override
+    public void onDrawerSlide(View drawerView, float slideOffset) {
+        L.i("onDrawerSlide");
+    }
+
+    @Override
+    public void onDrawerOpened(View drawerView) {
+        L.i("onDrawerOpened");
+    }
+
+    @Override
+    public void onDrawerClosed(View drawerView) {
+        L.i("onDrawerClosed");
+    }
+
+    @Override
+    public void onDrawerStateChanged(int newState) {
+        L.i("onDrawerStateChanged");
+    }
+
+    @Override
+    public void onClick(View view) {
+        switch (view.getId()) {
+            case R.id.main_dl_tv_correct:
+                Intent correctIntent = new Intent(MainActivity.this, CorrectpwdActivity.class);
+                startAc

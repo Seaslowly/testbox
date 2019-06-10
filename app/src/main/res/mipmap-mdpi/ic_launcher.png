@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/login_bg">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_margin="20dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/login_logo"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="10dp"
+            android:text="@string/login_account"
+            android:textColor="@color/login_title_color"
+            android:textSize="@dimen/dimen_login_title_text"/>
+
+        <EditText
+            android:id="@id/login_et_account"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/edittext_input_bg"
+            android:paddingLeft="15dp"
+            android:drawablePadding="10dp"
+            android:drawableStart="@mipmap/login_icon_user"
+            android:maxLines="1"
+            android:inputType="text"
+            android:imeOptions="actionNext"
+            android:layout_margin="8dp"
+            android:textColor="@color/login_title_color"
+            android:textSize="@dimen/dimen_login_inpute_text"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="@string/login_pwd"
+            android:textColor="@color/login_title_color"
+            android:textSize="@dimen/dimen_login_title_text"/>
+

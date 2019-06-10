@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:id="@+id/tv_receive"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:textSize="20sp"/>
+
+    <View
+        android:id="@+id/View1"
+        android:layout_below="@+id/tv_receive"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorPrimary"/>
+
+
+    <EditText
+        android:layout_below="@+id/View1"
+        android:id="@+id/et_send"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="发送数据："
+        android:imeOptions="actionGo"
+        android:singleLine="true"
+        android:textSize="20sp"/>
+
+
+
+    <Button
+        android:layout_below="@+id/et_send"
+        android:id="@+id/btn_send01"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="查询服务器ip"/>
+
+    <Button
+        android:layout_below="@+id/btn_send01"
+        android:id="@+id/btn_send02"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="发送动态数据" />
+    <Button
+        android:layout_below="@+id/btn_send02"
+        android:id="@+id/btn_send03"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="查询设备编号"/>
+    <Button
+        android:layout_below="@+id/btn_send03"
+        android:id="@+id/btn_send04"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="查询IMEI号"/>
+
+    <Button
+        android:layout_below="@+id/btn_send04"
+        android:id="@+id/btn_clear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="清空全部数据"/>
+
+    <TextView
+        android:layout_below="@+id/btn_clear"
+        android:id="@+id/OTGstate"
+        android:textSize="22sp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="bottom|center"
+        android:text="OTG连接状态" />
+
+</RelativeLayout>

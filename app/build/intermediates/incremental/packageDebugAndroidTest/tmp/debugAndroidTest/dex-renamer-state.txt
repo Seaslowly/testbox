@@ -1,0 +1,4 @@
+#Thu Apr 11 17:22:15 CST 2019
+base.0=E\:\\AndroidProject\\testbox\\app\\build\\intermediates\\dex\\debugAndroidTest\\mergeDexDebugAndroidTest\\out
+path.0=classes.dex
+renamed.0=classes.dex

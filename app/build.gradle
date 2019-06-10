@@ -1,0 +1,87 @@
+
+apply plugin: 'com.android.application'
+//引用bugly配置文件
+//apply from:'tinker-support.gradle'
+
+android {
+    signingConfigs {
+        config {
+            keyAlias 'stringtechkey'
+            keyPassword 'stringtech123'
+            storeFile file('D:/stringtech_key/stringtech.jks')
+            storePassword 'stringtech123'
+        }
+    }
+    compileSdkVersion 28
+    defaultConfig {
+        applicationId "com.silvia.controlbox"
+        minSdkVersion 16
+        targetSdkVersion 28
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        externalNativeBuild {
+            cmake {
+                cppFlags ""
+            }
+        }
+        ndk {
+            //设置支持的SO库架构
+            abiFilters 'armeabi' //, 'x86', 'armeabi-v7a', 'x86_64', 'arm64-v8a'
+        }
+        aaptOptions { cruncherEnabled = false }
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            // proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            debuggable false
+            jniDebuggable false
+            signingConfig signingConfigs.config
+            zipAlignEnabled false
+        }
+        debug {
+            debuggable false
+            signingConfig signingConfigs.config
+        }
+    }
+    /*externalNativeBuild {
+        cmake {
+            path "CMakeLists.txt"
+        }
+    }*/
+    productFlavors {
+    }
+    buildToolsVersion '28.0.3'
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    //noinspection GradleCompatible
+    implementation 'com.android.support:support-annotations:28.0.0'
+    implementation 'com.android.support:appcompat-v7:28.0.0'
+    implementation 'com.qmuiteam:qmui:1.2.0'
+    //implementation 'com.qmuiteam:qmui:1.1.6'
+    implementation 'com.qmuiteam:arch:0.3.1'
+    implementation 'com.android.support.constraint:constraint-layout:1.1.3'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+    implementation files('libs/tscsdk.jar')
+    implementation 'com.jakewharton:butterknife:8.8.1'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.8.1'
+    implementation files('libs/usbserial.jar')
+    implementation files('libs/core-3.3.3.jar')
+    //U盘组件
+    implementation 'com.github.mjdev:libaums:0.6.0'
+    //Bugly异常上报 第一次配置需要使用这行 已经集成过则要注释这个
+    //implementation 'com.tencent.bugly:crashreport:2.8.6'
+    implementation 'com.tencent.bugly:nativecrashreport:3.6.0.1'
+    //Bugly热更新
+    //implementation 'com.tencent.bugly:crashreport_upgrade:1.3.1'
+    implementation 'com.tencent.bugly:nativecrashreport:latest.release'
+    //其中latest.release指代最新版本号，也可以指定明确的版本号，例如2.2.0
+    implementation 'com.tencent.bugly:crashreport_upgrade:latest.release'
+    //其中latest.release指代最新版本号，也可以指定明确的版本号，例如1.2.0
+}
