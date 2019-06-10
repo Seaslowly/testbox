@@ -249,10 +249,10 @@ public class ShellLableFragment extends Fragment implements View.OnClickListener
         mCarrier_identification.setOnKeyListener(this);
 
     }
-
     public void test(){
-        //测试类
+        //测试类 重新测试
     }
+
     @Override
     public void onAttach(Context context) {
         super.onAttach(context);

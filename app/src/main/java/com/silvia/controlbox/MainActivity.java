@@ -158,7 +158,6 @@ public class MainActivity extends AppCompatActivity implements ScanGunKeyEventHe
                     pos = Common.SetDevID;
                     break;
                 case Common.WriteIp:
-                    //ToastUtil.showShortToast((String) msg.obj);
                     String ip = SpWrapper.getHost(mContext, null);
                     if (ip != null) {
                         Util.setIP(usbService, ip);
@@ -427,6 +426,7 @@ public class MainActivity extends AppCompatActivity implements ScanGunKeyEventHe
                                 }
                             } else if (pos == Common.WriteIp) {
                                 if (str.contains("OK")) {
+                                    Thread.sleep(3000);//延时1s
                                     String msg1 = "设置服务器ip端口成功\n";
                                     MsgSend(Common.QueryIp, msg1);
                                 } else {
@@ -590,6 +590,8 @@ public class MainActivity extends AppCompatActivity implements ScanGunKeyEventHe
                         }
                     } catch (UnsupportedEncodingException e) {
                         Log.e(Common.Log, "ERROR:" + e.getMessage());
+                    } catch (InterruptedException e) {
+                        e.printStackTrace();
                     }
                     break;
                 case UsbService.CTS_CHANGE:
